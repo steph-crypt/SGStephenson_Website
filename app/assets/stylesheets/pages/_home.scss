@@ -3,24 +3,73 @@ body {
   color: white;
   height: 100vh;
   width: 100%;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: center;
 }
-
 
 h1 {
   font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Cinzel', serif;
   font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
  p {
   font-family: 'Pacifico', cursive;
   font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
  }
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about {
+
+}
+
+#projects {
+
+}
+
+#contact {
+
+}
+
+#linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
