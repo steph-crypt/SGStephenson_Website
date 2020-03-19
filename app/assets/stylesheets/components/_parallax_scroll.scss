@@ -1,7 +1,6 @@
 HTML SCSS JSResult
 EDIT ON
-// @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
-// @import url(http://weloveiconfonts.com/api/?family=entypo);
+
 
 /* entypo */
 [class*="entypo-"]:before {
@@ -26,15 +25,23 @@ $color-gamma: #333333;
   margin: 0;
 }
 
-
-
-// h1 {
-//   text-align: center;
-//   font-weight: 300;
-// /*  font-size: 2em;*/
-//   border-bottom: 2px solid $color-beta;
-//   margin-bottom: 1em;
+// html, body {
+//   height: 100%;
 // }
+
+// body {
+//   font-family: 'Roboto', sans-serif;
+//   font-size: 1em;
+//   color: $color-gamma;
+// }
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2em;
+  border-bottom: 2px solid $color-beta;
+  margin-bottom: 1em;
+}
 
 a {
   text-decoration: none;
@@ -114,6 +121,12 @@ nav {
       height: 30em;
       width: 100%;
     }
+    @include cover(1, "http://cdn.eyeem.com/thumb/h/800/24778877c8ba7a9bb6318b660b8a2e47d374d43f-1370105135");
+    @include cover(2, "http://cdn.eyeem.com/thumb/h/800/4f488e1db3960b9ba1246125e8181e7741564b62-1370076361");
+    @include cover(3, "http://cdn.eyeem.com/thumb/h/800/8484e67f9b7bef4b2e00ddf0f353f036b4b0e9e6-1348396364");
+    @include cover(4, "http://cdn.eyeem.com/thumb/h/800/704e38b95cb808b0df338a9661007f93ce3bed98-1348321831");
+    @include cover(5, "http://cdn.eyeem.com/thumb/h/800/20b3440516db8c8df4490b17ba3109d91c07f839-1348321287");
+    @include cover(6, "http://cdn.eyeem.com/thumb/h/800/d90429ba407c439beae9d23e468dc9c1deb7efdd-1348357036");
   }
 }
 
