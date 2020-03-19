@@ -1,8 +1,9 @@
 body {
   background-color: #000000;
-  background: linear-gradient(rgba(215, 179, 240, -27.6), rgba(62, -34, 195, 0.4)), url(images/jason-leung1.jpg);
+  background: url(asset_path('scott-rodgerson.jpg'));
   color: white;
   background-size: 1290px;
+  text-shadow: 5px 4px 14px black;
 }
 
 header {
@@ -26,10 +27,11 @@ h1 {
   text-align: center;
   width: 100%;
   padding-top: -100px;
+  color: white;
 }
-/*____________________
- link animation
-____________________*/
+// /*____________________
+//  link animation
+// ____________________*/
 
 div[class*=box] {
   height: 33.33%;
@@ -411,23 +413,15 @@ $color-gamma: #333333;
   margin: 0;
 }
 
-/*html, body {
-  height: 100%;
-}*/
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  color: $color-gamma;
-}
 
-h1 {
-  text-align: center;
-  font-weight: 300;
-/*  font-size: 2em;*/
-  border-bottom: 2px solid $color-beta;
-  margin-bottom: 1em;
-}
+// h1 {
+//   text-align: center;
+//   font-weight: 300;
+// /*  font-size: 2em;*/
+//   border-bottom: 2px solid $color-beta;
+//   margin-bottom: 1em;
+// }
 
 a {
   text-decoration: none;
