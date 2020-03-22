@@ -11,9 +11,10 @@ $color-alpha: #eeeeee;
 $color-beta: #2ecc71;
 $color-gamma: #333333;
 
-@mixin cover($i, $url) {
+@mixin cover($i, $name) {
   &:nth-child(#{$i}) {
     &:after {
+      $url:"../images/#{$name}.jpg";
       background-image: url($url);
     }
   }
@@ -59,7 +60,7 @@ nav {
   height: 100%;
   position: fixed;
   left: -30%;
-  background-image: url(http://r.myxotod.de/codepen.io/maincode/ubuntu-bg.jpg);
+  background-image: url(asset_path('scott-rodgerson.jpg'));
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -121,7 +122,7 @@ nav {
       height: 30em;
       width: 100%;
     }
-    @include cover(1, "http://cdn.eyeem.com/thumb/h/800/24778877c8ba7a9bb6318b660b8a2e47d374d43f-1370105135");
+    @include cover(1, scott-rodgerson);
     @include cover(2, "http://cdn.eyeem.com/thumb/h/800/4f488e1db3960b9ba1246125e8181e7741564b62-1370076361");
     @include cover(3, "http://cdn.eyeem.com/thumb/h/800/8484e67f9b7bef4b2e00ddf0f353f036b4b0e9e6-1348396364");
     @include cover(4, "http://cdn.eyeem.com/thumb/h/800/704e38b95cb808b0df338a9661007f93ce3bed98-1348321831");
