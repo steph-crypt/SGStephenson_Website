@@ -19,29 +19,10 @@
     </div>
   </div>
 
-
-    <div id="scene" class="scene">
-    <!--   <div data-depth="1.00">
-        <img src="images/layer1.png">
-      </div> -->
-      <div data-depth-x="170.00" data-depth-y="-30.80">hello
-     <!--    <img src="triangle.png"> -->
-      </div>
-      <div class="image" data-depth-x="150.00" data-depth-y="-14.400"> hello
-       <!--  <img src="triangle.png"> -->
-      </div>
-      <div class="image" data-depth="130.00" data-depth-y="-20.30"> hello
-        <!-- <img src="triangle.png"> -->
-      </div>
-      <div class="image" data-depth="120.00" data-depth-y="-50.80"> hello
-        <!-- <img src="triangle.png"> -->
-      </div>
-      <div class="image" data-depth="100.00" data-depth-y="-10.80"> hello
-       <!--  <img src="triangle.png"> -->
-      </div>
-    </div>
   <header>
-    <h1>Sofia Stephenson</h1>
+    <div id="scene" class="scene">
+      <div data-depth-x=".30" data-depth-y="-.30">Sofia Stephenson</div>
+    </div>
   </header>
 
 <div class="section-B">
@@ -57,14 +38,14 @@
   <div class="projects">
     <h2>Projects</h2>
     <div class="projects-contaner">
-      <a class="tastebudd" href="http://www.taste-budd.com/"><img class="thumbnail" src="tastebudd.png" alt="tastebudd" style="max-width: 920px;"></a>
+      <a class="tastebudd" href="http://www.taste-budd.com/"><img class="thumbnail" src="tastebudd.png" alt="tastebudd" style="max-height: 500px;"></a>
       <p> Solo Travelers, welcome to TasteBudd! Here you can find the spontaneous buddies of your dreams to hang out and taste a new culture with.</p>
-      <a class="deathbed" href="http://www.Death-Bed.com/"><img class="thumbnail" src="DeathBed.png" alt="DeathBed" style="max-width: 920px;"></a>
+      <a class="deathbed" href="http://www.Death-Bed.com/"><img class="thumbnail" src="DeathBed.png" alt="DeathBed" style="max-height: 500px;"></a>
       <p>DeathBed is a dark comical satire on AirBnB, allowing hosts to lease and guests to rent a grave in Germany for as long as they need.
       Hosts can rent anything from a formal plot in a cemetary, to a hole in their backyard and guests can leave reviews from the Great Beyond and renew their booking at any time.</p>
-      <a class="socktails" href="https://socktails-cocktails.herokuapp.com/"><img class="thumbnail" src="Socktail.png" alt="Socktails Cocktails" style="max-width: 920px;"></a>
+      <a class="socktails" href="https://socktails-cocktails.herokuapp.com/"><img class="thumbnail" src="Socktail.png" alt="Socktails Cocktails" style="max-height: 500px;"></a>
       <p>Inspired by Dr. Seuss's Fox in Socks, Socktails Cocktails is a webpage hebstage where you can find, add, create or incubate the recipes of your favorite cocktails and socktails</p>
-      <a class="haunted" href="https://haunted-keyboard.herokuapp.com/"><img class="thumbnail" src="haunted.png" alt="Haunted Keyboard" style="max-width: 920px;"></a>
+      <a class="haunted" href="https://haunted-keyboard.herokuapp.com/"><img class="thumbnail" src="haunted.png" alt="Haunted Keyboard" style="max-height: 500px;"></a>
       <p>Spook yourself with eerie sounds from the Haunted Keyboard</p>
     </div>
   </div>
@@ -85,157 +66,112 @@
   <footer>
 
 
-  <script>
-    $(function() {
-    $('a[href*=#]').on('click', function(e) {
-      e.preventDefault();
-      $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 3000, 'linear');
+    <script>
+      $(function() {
+      $('a[href*=#]').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 3000, 'linear');
+      });
     });
-  });
-  </script>
+    </script>
 
-  <script>
-  class TextScramble {
-    constructor(el) {
-      this.el = el
-      this.chars = '!<>-_\\/[]{}—=+*^?#________'
-      this.update = this.update.bind(this)
-    }
-    setText(newText) {
-      const oldText = this.el.innerText
-      const length = Math.max(oldText.length, newText.length)
-      const promise = new Promise((resolve) => this.resolve = resolve)
-      this.queue = []
-      for (let i = 0; i < length; i++) {
-        const from = oldText[i] || ''
-        const to = newText[i] || ''
-        const start = Math.floor(Math.random() * 40)
-        const end = start + Math.floor(Math.random() * 40)
-        this.queue.push({ from, to, start, end })
+    <script>
+    class TextScramble {
+      constructor(el) {
+        this.el = el
+        this.chars = '!<>-_\\/[]{}—=+*^?#________'
+        this.update = this.update.bind(this)
       }
-      cancelAnimationFrame(this.frameRequest)
-      this.frame = 0
-      this.update()
-      return promise
-    }
-    update() {
-      let output = ''
-      let complete = 0
-      for (let i = 0, n = this.queue.length; i < n; i++) {
-        let { from, to, start, end, char } = this.queue[i]
-        if (this.frame >= end) {
-          complete++
-          output += to
-        } else if (this.frame >= start) {
-          if (!char || Math.random() < 0.28) {
-            char = this.randomChar()
-            this.queue[i].char = char
+      setText(newText) {
+        const oldText = this.el.innerText
+        const length = Math.max(oldText.length, newText.length)
+        const promise = new Promise((resolve) => this.resolve = resolve)
+        this.queue = []
+        for (let i = 0; i < length; i++) {
+          const from = oldText[i] || ''
+          const to = newText[i] || ''
+          const start = Math.floor(Math.random() * 40)
+          const end = start + Math.floor(Math.random() * 40)
+          this.queue.push({ from, to, start, end })
+        }
+        cancelAnimationFrame(this.frameRequest)
+        this.frame = 0
+        this.update()
+        return promise
+      }
+      update() {
+        let output = ''
+        let complete = 0
+        for (let i = 0, n = this.queue.length; i < n; i++) {
+          let { from, to, start, end, char } = this.queue[i]
+          if (this.frame >= end) {
+            complete++
+            output += to
+          } else if (this.frame >= start) {
+            if (!char || Math.random() < 0.28) {
+              char = this.randomChar()
+              this.queue[i].char = char
+            }
+            output += `<span class="dud">${char}</span>`
+          } else {
+            output += from
           }
-          output += `<span class="dud">${char}</span>`
+        }
+        this.el.innerHTML = output
+        if (complete === this.queue.length) {
+          this.resolve()
         } else {
-          output += from
+          this.frameRequest = requestAnimationFrame(this.update)
+          this.frame++
         }
       }
-      this.el.innerHTML = output
-      if (complete === this.queue.length) {
-        this.resolve()
-      } else {
-        this.frameRequest = requestAnimationFrame(this.update)
-        this.frame++
+      randomChar() {
+        return this.chars[Math.floor(Math.random() * this.chars.length)]
       }
     }
-    randomChar() {
-      return this.chars[Math.floor(Math.random() * this.chars.length)]
+
+    // ——————————————————————————————————————————————————
+    // Example
+    // ——————————————————————————————————————————————————
+
+    const phrases = [
+      'Do not try and bend the spoon.',
+      'That’s impossible.',
+      'Instead…',
+      'only try to realize the truth.',
+      'What truth?',
+      'There is no spoon.',
+      'Then you’ll see,',
+      'that it is not the spoon that bends,',
+      'it is only yourself.'
+    ]
+
+    const el = document.querySelector('.text')
+    const fx = new TextScramble(el)
+
+    let counter = 0
+    const next = () => {
+      fx.setText(phrases[counter]).then(() => {
+        setTimeout(next, 3000)
+      })
+      counter = (counter + 1) % phrases.length
     }
-  }
 
-  // ——————————————————————————————————————————————————
-  // Example
-  // ——————————————————————————————————————————————————
+    next()
+    </script>
 
-  const phrases = [
-    'Do not try and bend the spoon.',
-    'That’s impossible.',
-    'Instead…',
-    'only try to realize the truth.',
-    'What truth?',
-    'There is no spoon.',
-    'Then you’ll see,',
-    'that it is not the spoon that bends,',
-    'it is only yourself.'
-  ]
+  <script src="./parallax.js"></script>
+    <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene, {
+    });
+    </script>
 
-  const el = document.querySelector('.text')
-  const fx = new TextScramble(el)
-
-  let counter = 0
-  const next = () => {
-    fx.setText(phrases[counter]).then(() => {
-      setTimeout(next, 3000)
-    })
-    counter = (counter + 1) % phrases.length
-  }
-
-  next()
-  </script>
-
-<!--   <script>
-$(document).ready(function() {
-  var navOpen = false;
-  $('.toggle-nav').click(function() {
-    if (navOpen == false) {
-      $('.wrapper').css("position", "absolute").animate({
-        left: "30%"
-      });
-      $(this).animate({
-        left: "30%"
-      }).removeClass("entypo-menu").addClass("entypo-cancel");
-      $('nav').animate({
-        left: "0%"
-      });
-      navOpen = true;
-    } else {
-      $('.wrapper').animate({
-        left: "0%"
-      }, function() {
-        $(this).css("position", "relative");
-      });
-      $(this).animate({
-        left: "0%"
-      }).removeClass("entypo-cancel").addClass("entypo-menu");
-      $('nav').animate({
-        left: "-30%"
-      });
-      navOpen = false;
-    }
-  });
-
-  // Smooth Anchor Scrolling
-  $('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top
-    }, 500);
-    return false;
-  });
-});
-
-  </script> -->
-<script src="./parallax.js"></script>
+  <script src="simpleParallax.js"></script>
   <script>
-  var scene = document.getElementById('scene');
-  var parallax = new Parallax(scene, {
-  });
+    var image = document.getElementsByClassName('thumbnail');
+  new simpleParallax(image);
   </script>
 
-<script src="simpleParallax.js"></script>
-<script>
-  var image = document.getElementsByClassName('thumbnail');
-new simpleParallax(image);
-</script>
-
- <!--  <script>
-    const target = document.querySelector('.tastebudd  ')
-    const parallax = rallax(target, { speed: 0.4 })
-  </script> -->
-</div>
+  </div>
 </div>
