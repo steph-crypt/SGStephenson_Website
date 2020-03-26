@@ -4,7 +4,3 @@
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(scene);
 
-// import rallax from 'rallax.js';
-
-// const target = document.querySelector('.tastebudd')
-// const parallax = rallax(target, { speed: 0.4 })
