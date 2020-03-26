@@ -1,6 +1,7 @@
 // /*____________________
 //  link animation
 // ____________________*/
+$color-beta: #2ecc71;
 
 div[class*=box] {
   height: 33.33%;
@@ -43,13 +44,16 @@ div[class*=box] {
   border-top-color: rgba(255,255,255,0.5);
   border-bottom-color: rgba(255,255,255,0.5);
   transform: scale(0.1, 1);
+  border-bottom: 2px solid $color-beta;
 }
 .btn-one:hover a {
   letter-spacing: 3px;
+  border-bottom: 2px solid $color-beta;
 }
 .btn-one:hover::before {
   opacity: 1;
   transform: scale(1, 1);
+  border-bottom: 2px solid $color-beta;
 }
 .btn-one::after {
   content: '';
@@ -60,9 +64,11 @@ div[class*=box] {
   height: 100%;
   z-index: 1;
   transition: all 0.3s;
+  border-bottom: 2px solid $color-beta;
 }
 .btn-one:hover::after {
   opacity: 0;
   transform: scale(0.1, 1);
+  border-bottom: 2px solid $color-beta;
 }
 
