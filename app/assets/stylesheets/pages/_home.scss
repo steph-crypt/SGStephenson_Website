@@ -28,7 +28,6 @@ h1 {
   font-weight: 300;
   font-size: 2em;
   border-bottom: 2px solid $color-beta;
-  // margin-bottom: 1em;
   font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 95px;
   display: flex;
@@ -40,7 +39,7 @@ h1 {
 }
 
 header h2 {
-font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 45px;
   display: flex;
   justify-content: center;
@@ -51,7 +50,7 @@ font-family: 'Montserrat Alternates', sans-serif;
 }
 
 h2 {
-font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 45px;
   display: flex;
   justify-content: center;
@@ -62,15 +61,12 @@ font-family: 'Montserrat Alternates', sans-serif;
 
 h3 {
 
-font-family: 'Montserrat Alternates', sans-serif;
-// font-family: 'Khand', sans-serif;**
-
+  font-family: 'Montserrat Alternates';
   font-size: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-top: 2px solid $color-beta;
   padding-top: 30px;
 }
 
@@ -83,7 +79,10 @@ font-family: 'Montserrat Alternates', sans-serif;
 
 section {
   background-color: black;
+
   position: absolute;
+  border-top: 1px solid white;
+  max-width: 1290px;
 }
  p {
   /*font-family: 'Pacifico', cursive;
@@ -142,7 +141,7 @@ a {
     text-transform: uppercase;
     color: white;
     font-size: 25px;
-    font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
     &:hover {
     }
   }
@@ -153,7 +152,8 @@ a:hover {
 
 
 #about {
-
+  height: 100vh;
+  border-bottom: 2px solid $color-beta;
 
 }
 
@@ -166,8 +166,6 @@ a:hover {
   justify-content: center;
   text-align: center;
   padding: 35px 11px;
-  // border: 2px solid #61cd72;
-  // border-radius: 15px;
   font-size: 25px;
 
 
