@@ -90,8 +90,8 @@ section {
   background-color: black;
   position: absolute;
   border-top: 1px solid white;
-  max-width: 1290px;
 }
+
  p {
   /*font-family: 'Pacifico', cursive;
   font-family: 'Amiri', serif;
@@ -159,7 +159,7 @@ a:hover {
 }
 
 
-#about {
+#about-container {
   height: 100vh;
   border-bottom: 2px solid $color-beta;
 
