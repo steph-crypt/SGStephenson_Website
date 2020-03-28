@@ -60,7 +60,6 @@ h2 {
 }
 
 h3 {
-
   font-family: 'Montserrat Alternates';
   font-size: 45px;
   display: flex;
@@ -77,9 +76,18 @@ h3 {
   // background-color: black;
 }
 
+.photo img {
+  border-radius: 160px;
+}
+
+.about p {
+  color: white;
+  background: none;
+  border: none;
+}
+
 section {
   background-color: black;
-
   position: absolute;
   border-top: 1px solid white;
   max-width: 1290px;
