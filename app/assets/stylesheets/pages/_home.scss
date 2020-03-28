@@ -16,7 +16,7 @@ header {
   text-align: center;
   height: 100vh;
   width: 100%;
-  display: flex;
+  display: flex!important;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -93,36 +93,9 @@ section {
 }
 
  p {
-  /*font-family: 'Pacifico', cursive;
-  font-family: 'Amiri', serif;
-   font-family: 'Cinzel', serif;
-font-family: 'Orbitron', sans-serif;
-font-family: 'Montserrat Alternates', sans-serif;
-font-family: 'Khand', sans-serif;
-font-family: 'Audiowide', cursive;
-font-family: 'Julius Sans One', sans-serif;
-font-family: 'Alegreya Sans SC', sans-serif;
-font-family: 'Bai Jamjuree', sans-serif;
-font-family: 'Tomorrow', sans-serif;
-font-family: 'Megrim', cursive;
- /* font-family: 'Inconsolata', monospace;*/
- /*font-family: 'Arvo', serif;*/
-/* font-family: 'Oxanium', cursive;*/
-
- /* font-family: 'Orbitron', sans-serif;*/
-/*font-family: 'Playfair Display', serif;*/
-    /* font-family: 'Arvo', serif; */
-    /* font-family: 'Oxanium', cursive; */
     font-size: 25px;
-    /* display: flex; */
-    /* justify-content: center; */
     align-items: center;
-    /* text-align: center; */
-    // text-shadow: 1px 2px 6px black;
     font-family: 'Khand', sans-serif;
-    /* font-family: 'Orbitron', sans-serif; */
-    /* font-family:
-     'Playfair Display', serif; */
     padding: 24px;
     border: 1px solid white;
     background: white;
