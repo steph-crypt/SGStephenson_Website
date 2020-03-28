@@ -1,6 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
-<div body>
+
   <div class="links">
     <div class="box-1">
       <div class="btn btn-one">
@@ -29,47 +29,63 @@
   <div id="section07" class="demo">
     <a href="#section07"><span></span></a>
 
-        <h2>Sup</h2>
-  <div id="about">
-    <h2>About Me</h2>
-      <p>I am a Fullstack Ruby on Rails web developer with a background in linguistics and writing. Coding engages my practical love of languages and logic with the incredible potency of computational rendering. When I began coding it was as though the veil had been lifted from the mysteriously powerful object that digitization is, and I came to see that all modern technology is compiled of beautifully, masterfully, creatively braided strands of logic, engineered by human genius. Realizing this, I became obsessed with the infinite potential of coding. Coding is human magic.</p>
-  </div>
+<section class="section-c">
+  <h2>Sup</h2>
+    <div class="about-container">
+      <h2>About Me</h2>
+      <div class="row">
+          <div class="about col-12 col-lg-8">
+            <p>I am a Fullstack Ruby on Rails web developer with a background in linguistics and writing. Coding engages my practical love of languages and logic with the incredible potency of computational rendering. When I began coding it was as though the veil had been lifted from the mysteriously powerful object that digitization is, and I came to see that all modern technology is compiled of beautifully, masterfully, creatively braided strands of logic, engineered by human genius. Realizing this, I became obsessed with the infinite potential of coding. Coding is human magic.</p>
+          </div>
+          <div class="photo col-12 col-lg-4">
+            <img src="sofia_blue3.jpg.png" alt="Sofia Photo">
+          </div>
+      </div>
+    </div>
+
 
   <div class="projects">
     <h2>Projects</h2>
     <div class="projects-contaner">
       <h3>TasteBudd</h3>
-      <a class="tastebudd" href="http://www.taste-budd.com/"><img class="thumbnail" src="tastebudd.png" alt="tastebudd" style="max-height: 500px;"></a>
+      <a class="tastebudd" href="http://www.taste-budd.com/"><img class="thumbnail" src="tastebudd.png" alt="Tastebudd" style="max-width: 1004px;"></a>
       <p> Solo Travelers, welcome to TasteBudd! Here you can find the spontaneous buddies of your dreams to hang out and taste a new culture with.</p>
       <h3>DeathBed</h3>
-      <a class="deathbed" href="http://www.Death-Bed.com/"><img class="thumbnail" src="DeathBed.png" alt="DeathBed" style="max-height: 500px;"></a>
+      <a class="deathbed" href="http://www.Death-Bed.com/"><img class="thumbnail" src="DeathBed.png" alt="DeathBed" style="max-width: 1004px;"></a>
       <p>DeathBed is a dark comical satire on AirBnB, allowing hosts to lease and guests to rent a grave in Germany for as long as they need.
       Hosts can rent anything from a formal plot in a cemetary, to a hole in their backyard and guests can leave reviews from the Great Beyond and renew their booking at any time.</p>
       <h3>Socktails Cocktails</h3>
-      <a class="socktails" href="https://socktails-cocktails.herokuapp.com/"><img class="thumbnail" src="Socktail.png" alt="Socktails Cocktails" style="max-height: 500px;"></a>
+      <a class="socktails" href="https://socktails-cocktails.herokuapp.com/"><img class="thumbnail" src="Socktail.png" alt="Socktails Cocktails" style="max-width: 1004px;"></a>
       <p>Inspired by Dr. Seuss's Fox in Socks, Socktails Cocktails is a webpage hebstage where you can find, add, create or incubate the recipes of your favorite cocktails and socktails</p>
       <h3>Haunted Keyboard</h3>
-      <a class="haunted" href="https://haunted-keyboard.herokuapp.com/"><img class="thumbnail" src="haunted.png" alt="Haunted Keyboard" style="max-height: 500px;"></a>
+      <a class="haunted" href="https://haunted-keyboard.herokuapp.com/"><img class="thumbnail" src="haunted.png" alt="Haunted Keyboard" style="max-width: 1004px;"></a>
       <p>Spook yourself with eerie sounds from the Haunted Keyboard</p>
     </div>
   </div>
 
-  <footer id="contact">
-    <h2>Contact Me</h2>
-      <p>Sofia G.S.
-        <br>
-      Berlin, Germany
-        <br>
-      sgandsteph@gmail.com</p>
-  <div class="container">
-      <div class="text">Do not try and bend the spoon.</div>
-    </div>
+  <div id="contact">
 
-    <h3>Follow me</h3>
+    <h2>Contact Me</h2>
+      <strong>
+        Sofia G.S.
+        <br>
+        Berlin, Germany
+        <br>
+        sgandsteph@gmail.com
+      </strong>
+  </div>
+
+ <footer>
+    <h2>Follow me</h2>
 
       <div id="linkedin"><a href="www.linkedin.com/in/sofiags">LinkedIn</a></div>
-     <div id="github"><a href="https://github.com/steph-crypt">Github</a></div>
-  <footer>
+      <div id="github"><a href="https://github.com/steph-crypt">Github</a></div>
+
+      <div class="anime-text-container">
+        <div class="text">Do not try and bend the spoon.</div>
+      </div>
+  </footer>
+
 
 
     <script>
@@ -174,10 +190,13 @@
     </script>
 
   <script src="simpleParallax.js"></script>
+
   <script>
     var image = document.getElementsByClassName('thumbnail');
   new simpleParallax(image);
   </script>
 
-  </div>
 </div>
+</div>
+</section>
+

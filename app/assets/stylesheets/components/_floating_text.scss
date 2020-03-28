@@ -1,11 +1,12 @@
 /*__________________________
 floating text
 __________________________*/
-.container {
+.anime-text-container {
   display: flex;
   justify-content: center;
   font-size: 40px;
   align-items: center;
+  padding: 40px;
 }
 .text {
   font-weight: 100;
