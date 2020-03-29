@@ -1,7 +1,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
 
-  <div class="links">
+<%= render 'layouts/banner' %>
+
+  <!-- <div class="links">
     <div class="box-1">
       <div class="btn btn-one">
         <a href="#about" style="text-decoration: none">About</a>
@@ -23,7 +25,7 @@
     <div id="scene" class="scene">
       <div data-depth-x=".30" data-depth-y="-.30">Sofia Stephenson</div>
     </div>
-  </header>
+  </header> -->
 
 <div class="section-B">
   <div id="section07" class="demo">
@@ -191,7 +193,9 @@
 
   <script>
     var image = document.getElementsByClassName('thumbnail');
-  new simpleParallax(image);
+  new simpleParallax(image, {
+  scale: 3.0
+  });
   </script>
 
 </div>
