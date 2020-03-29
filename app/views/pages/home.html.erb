@@ -1,6 +1,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 <%= render 'layouts/banner' %>
 
   <!-- <div class="links">
@@ -33,10 +33,11 @@
 
 <section class="section-c">
   <div id="about-container">
-    <h2>Sup</h2>
-    <h2>About Me</h2>
+    <h2>Hey there</h2>
+    <br>
       <div class="row">
         <div class="about col-12 col-lg-8">
+          <h2>About Me</h2>
           <p>I am a Fullstack Ruby on Rails web developer with a background in linguistics and writing. Coding engages my practical love of languages and logic with the incredible potency of computational rendering. When I began coding it was as though the veil had been lifted from the mysteriously powerful object that digitization is, and I came to see that all modern technology is compiled of beautifully, masterfully, creatively braided strands of logic, engineered by human genius. Realizing this, I became obsessed with the infinite potential of coding. Coding is human magic.</p>
         </div>
         <div class="photo col-12 col-lg-4">
@@ -47,19 +48,42 @@
 
   <div class="projects">
     <h2>Projects</h2>
-    <div class="projects-contaner">
+ <!--    <div class="glide">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide"><a class="tastebudd" href="http://www.taste-budd.com/">1<img src="tastebudd.png" alt="Tastebudd" style="max-width: 1004px;"></a>Tastebudd</li>
+    </ul>
+    <ul ul class="glide__slides">
+      <li class="glide__slide"><a class="tastebudd" href="http://www.taste-budd.com/">2<img src="tastebudd.png" alt="Tastebudd" style="max-width: 1004px;"></a>Deathbed</li>
+
+    </ul>
+  </div>
+  <div data-glide-el="controls">
+  <button data-glide-dir="<<">Start</button>
+  <button data-glide-dir=">>">End</button>
+</div>
+<div class="glide">
+  <div class="glide__track" data-glide-el="track">...</div>
+
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+  </div>
+</div>
+</div>
+ -->    <div class="projects-contaner">
       <h3>TasteBudd</h3>
-        <a class="tastebudd" href="http://www.taste-budd.com/"><img class="thumbnail" src="tastebudd.png" alt="Tastebudd" style="max-width: 1004px;"></a>
+        <a class="tastebudd" href="http://www.taste-budd.com/"><img src="tastebudd.png" alt="Tastebudd" style="max-width: 600px;"></a>
         <p> Solo Travelers, welcome to TasteBudd! Here you can find the spontaneous buddies of your dreams to hang out and taste a new culture with.</p>
       <h3>DeathBed</h3>
-        <a class="deathbed" href="http://www.Death-Bed.com/"><img class="thumbnail" src="DeathBed.png" alt="DeathBed" style="max-width: 1004px;"></a>
+        <a class="deathbed" href="http://www.Death-Bed.com/"><img src="DeathBed.png" alt="DeathBed" style="max-width: 600px;"></a>
         <p>DeathBed is a dark comical satire on AirBnB, allowing hosts to lease and guests to rent a grave in Germany for as long as they need.
           Hosts can rent anything from a formal plot in a cemetary, to a hole in their backyard and guests can leave reviews from the Great Beyond and renew their booking at any time.</p>
       <h3>Socktails Cocktails</h3>
-        <a class="socktails" href="https://socktails-cocktails.herokuapp.com/"><img class="thumbnail" src="Socktail.png" alt="Socktails Cocktails" style="max-width: 1004px;"></a>
+        <a class="socktails" href="https://socktails-cocktails.herokuapp.com/"><img src="Socktail.png" alt="Socktails Cocktails" style="max-width: 600px;"></a>
         <p>Inspired by Dr. Seuss's Fox in Socks, Socktails Cocktails is a webpage hebstage where you can find, add, create or incubate the recipes of your favorite cocktails and socktails</p>
       <h3>Haunted Keyboard</h3>
-        <a class="haunted" href="https://haunted-keyboard.herokuapp.com/"><img class="thumbnail" src="haunted.png" alt="Haunted Keyboard" style="max-width: 1004px;"></a>
+        <a class="haunted" href="https://haunted-keyboard.herokuapp.com/"><img src="haunted.png" alt="Haunted Keyboard" style="max-width: 600px;"></a>
         <p>Spook yourself with eerie sounds from the Haunted Keyboard</p>
     </div>
   </div>
@@ -84,7 +108,7 @@
         <a href="https://github.com/steph-crypt">Github</a>
       </div>
       <div class="anime-text-container">
-        <div class="text">Do not try and bend the spoon.</div>
+        <div class="text">God creates dinosaurs.</div>
       </div>
   </footer>
 
@@ -157,15 +181,22 @@
     // ——————————————————————————————————————————————————
 
     const phrases = [
-      'Do not try and bend the spoon.',
-      'That’s impossible.',
-      'Instead…',
-      'only try to realize the truth.',
-      'What truth?',
-      'There is no spoon.',
-      'Then you’ll see,',
-      'that it is not the spoon that bends,',
-      'it is only yourself.'
+    "God creates dinosaurs.",
+    "God kills dinosaurs.",
+    "God creates man.",
+    "Man kills God.",
+    "Man creates dinosaurs.",
+    "Dinosaurs kill man.",
+    "Woman inherits the earth."
+      // 'Do not try and end the spoon.',
+      // 'That’s impossible.',
+      // 'Instead…',
+      // 'only try to realize the truth.',
+      // 'What truth?',
+      // 'There is no spoon.',
+      // 'Then you’ll see,',
+      // 'that it is not the spoon that bends,',
+      // 'it is only yourself.'
     ]
 
     const el = document.querySelector('.text')
@@ -197,6 +228,11 @@
   scale: 3.0
   });
   </script>
+
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+      new Glide('.glide').mount()
+    </script>
 
 </div>
 </div>
