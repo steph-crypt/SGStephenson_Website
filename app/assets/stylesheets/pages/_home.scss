@@ -207,27 +207,15 @@ a:hover {
 // font-family: 'Oxanium', cursive;
 
 
-#contact {
-  border-top: 2px solid #61cd72;
-
-  h2 {
- color: black;
- strong {
-  background-color: white;
-
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 35px 11px;
-  font-size: 25px;
-}
-}
-}
-
 footer {
   padding-bottom: 40px;
-  color: black;
-  background-color: white;
+  border-top: 2px solid #61cd72;
+
+  p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 #linkedin {
