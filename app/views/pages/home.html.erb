@@ -46,8 +46,6 @@
       </div>
   </div>
 
-  <div class="projects">
-    <h2>Projects</h2>
  <!--    <div class="glide">
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
@@ -71,7 +69,19 @@
   </div>
 </div>
 </div>
- -->    <div class="projects-contaner">
+
+
+ -->
+
+ <div>
+   <img class="thumbnail-2" src="alex-perez-copy.jpg" alt="Pattern" style="display: flex; justify-content: center; width: 200%; height: 300px;">
+ </div>
+<div class="main-container">
+
+    </div>
+   <div class="projects-contaner">
+  <div id="projects">
+    <h2>Projects</h2>
       <h3>TasteBudd</h3>
         <a class="tastebudd" href="http://www.taste-budd.com/"><img src="tastebudd.png" alt="Tastebudd" style="max-width: 600px;"></a>
         <p> Solo Travelers, welcome to TasteBudd! Here you can find the spontaneous buddies of your dreams to hang out and taste a new culture with.</p>
@@ -88,7 +98,7 @@
     </div>
   </div>
 
-  <div id="contact">
+  <footer id="contact">
     <h2>Contact Me</h2>
       <strong>
         Sofia G.S.
@@ -97,9 +107,7 @@
       <br>
         sgandsteph@gmail.com
       </strong>
-  </div>
 
-  <footer>
     <h2>Follow me</h2>
       <div id="linkedin">
         <a href="www.linkedin.com/in/sofiags">LinkedIn</a>
@@ -111,6 +119,7 @@
         <div class="text">God creates dinosaurs.</div>
       </div>
   </footer>
+  </div>
 
     <script>
       $(function() {
@@ -227,6 +236,12 @@
   new simpleParallax(image, {
   scale: 3.0
   });
+
+  var image = document.getElementsByClassName('thumbnail-2');
+new simpleParallax(image, {
+  orientation: 'right'
+});
+
   </script>
 
   <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
