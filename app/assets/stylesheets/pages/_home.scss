@@ -103,12 +103,25 @@ h3 {
 #about-container h2 {
   font-family: 'Montserrat Subrayada', sans-serif;
   color: white;
-  font-size: 45px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 40px;
+}
+
+#hey {
+  font-family: 'Grand Hotel', cursive;
+  font-style: italic;
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  letter-spacing: 0.1em;
 }
 
 .photo img {
@@ -127,6 +140,13 @@ h3 {
 .about h2 {
   display: flex;
   justify-content: center;
+}
+
+#technical-skills p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 100px;
 }
 
 
@@ -176,16 +196,10 @@ a:hover {
 
 
 #about-container {
-  height: 100vh;
+  // height: 100vh;
   border-bottom: 2px solid $color-beta;
-  height: 140vh;
+  // height: 140vh;
 
-}
-
-#technical-skills {
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
 #projects {
@@ -204,7 +218,7 @@ a:hover {
   p {
      align-items: center;
   text-align: center;
-  margin-top: 40px;
+  // margin-top: 40px;
   display: flex;
   justify-content: center;
   }
