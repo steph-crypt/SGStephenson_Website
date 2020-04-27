@@ -4,265 +4,149 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<%= render 'layouts/banner' %>
+
+  <%= render 'layouts/banner' %>
 
 <div class="section-B">
   <div id="section07" class="demo">
     <a href="#section07"><span></span></a>
 
-<section class="section-c">
-  <div id="about-container">
-    <div id="hey">Hey there</div>
-    <br>
-      <div class="row">
-        <div class="about col-12 col-lg-8">
-          <h2>About Me</h2>
-          <p>I am a Junior Web developer and lover of human and machine languages alike. Before getting into coding I worked in the Middle East with NGOs and in schools.
-           Some time ago I began coding and became obsessed with it.
-            Coding engages my practical love of languages and logic with the incredible power of computers.
-             When I began coding it was as though the veil had been lifted from the mysteriously powerful object that digitization is,
-              and I came to see that all modern technology is compiled of beautifully, masterfully, creatively braided strands of logic,
-            engineered by human genius. Realizing this, I became obsessed with the infinite potential of coding. Coding is human magic.
-             I went on to study at Le Wagon coding bootcamp in Autumn 2019, and have since then buried myself in projects, and ravenously devour new logical concepts, syntax, and doughnuts.
-             Additionally, I love laser tag, speak Arabic, write comedy, and have a fatal baby addiction...
-           </p>
+      <section class="section-c">
+
+        <%= render 'layouts/about' %>
+
+        <div>
+          <img class="thumbnail-2" src="alex-perez-copy.jpg" alt="Pattern" style="display: flex; justify-content: center; width: 200%; height: 300px;">
         </div>
-        <div class="photo col-12 col-lg-4">
-          <img src="sofia_blue3.jpg.png" alt="Sofia Photo">
-        </div>
-      </div>
-      <div id="technical-skills">
-        <p>
-         Technical Skills
-         <br>
-         Ruby, Ruby on Rails, ES6 JavaScript, CSS, SCSS, Bootstrap, HTML, GIT and workflow, APIs, JSON/XML, scraping, Python scraping,  Webpack, SQL, Postgres, Heroku.
-       </p>
-     </div>
-  </div>
+        <div class="main-container"></div>
 
- <div>
-   <img class="thumbnail-2" src="alex-perez-copy.jpg" alt="Pattern" style="display: flex; justify-content: center; width: 200%; height: 300px;">
- </div>
-<div class="main-container">
+        <%= render 'layouts/projects' %>
 
-    </div>
-   <div class="projects-contaner">
-  <div id="projects">
-    <h2>Projects</h2>
+        <%= render 'layouts/footer' %>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <script>
+            $(function() {
+            $('a[href*=#]').on('click', function(e) {
+              e.preventDefault();
+              $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 3000, 'linear');
+            });
+          });
+          </script>
 
-
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <a class="website" href="http://www.taste-budd.com/"><img src="tastebudd.png" class="d-block w-100" alt="Tastebudd" style="max-width: 700px; border: 2px solid #61cd72;
-  border-radius: 10px;"></a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>TasteBudd</h5>
-        <p> A MeetUp-like site for Solo Travelers to find other travelers to hang out with on the fly in a foreign land. Built using Ruby on Rails, Active Record and PostGreSQL,
-            with Pundit and Devise for authentication and authorization, APIs, JavaScript,
-            JQuery and AJAX for responsive features. It was developed in a team of 4 developers at LeWagon coding bootcamp in 2 weeks,
-            and continues to evolve.<p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <a class="website" href="http://www.Death-Bed.com/"><img src="DeathBed.png" class="d-block w-100" alt="DeathBed" style="max-width: 700px; border: 2px solid #61cd72;
-  border-radius: 10px;"></a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>DeathBed</h5>
-        <p>DeathBed is is a dark comical satire on AirBnB,
-            allowing hosts to lease and guests to rent a grave in Germany.
-            Built using Ruby on Rails, Active Record and PostGreSQL,
-            with Pundit and Devise for authentication and authorization.
-            Hosts can rent anything from a formal plot in a cemetary,
-            to a hole in their backyard and guests can leave reviews from the Great Beyond.
-            Deathbed was developed in a team of developers at LeWagon coding bootcamp in one week,
-            and I later elaborated on it independently.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <a class="website" href="https://socktails-cocktails.herokuapp.com/"><img src="Socktail.png" class="d-block w-100" alt="Socktails Cocktails" style="max-width: 700px; border: 2px solid #61cd72;
-  border-radius: 10px;"></a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Socktails Cocktails</h5>
-        <p>Inspired by Dr. Seuss's "Fox in Socks", Socktails Cocktails is
-            a simple MVC Ruby on Rails website that uses Active Record and PostGreSQL.
-            Users can find, add, create or incubate the recipes of their favorite cocktails and socktails.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <a class="website" href="https://haunted-keyboard.herokuapp.com/"><img src="haunted.png" class="d-block w-100" alt="Haunted Keyboard" style="max-width: 700px; border: 2px solid #61cd72;
-  border-radius: 10px;"></a>
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Haunted Keyboard</h5>
-        <p>Haunted Keyboard is a responsive Vanilla JavaScript app
-           that plays eerie sounds from the user's keyboard.</p>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-    </div>
-  </div>
-
-  <footer id="contact">
-    <h2>Contact Me</h2>
-      <p>
-        Sofia G.S.
-      <br>
-        Berlin, Germany
-      <br>
-        sgandsteph@gmail.com
-      </p>
-
-      <div id="linkedin">
-        <a href="www.linkedin.com/in/sofiags"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <div id="github">
-        <a href="https://github.com/steph-crypt"><i class="fab fa-github-square"></i></a>
-
-      </div>
-      <div class="anime-text-container">
-        <div class="text">There is no spoon.</div>
-      </div>
-  </footer>
-  </div>
-
-    <script>
-      $(function() {
-      $('a[href*=#]').on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 3000, 'linear');
-      });
-    });
-    </script>
-
-    <script>
-    class TextScramble {
-      constructor(el) {
-        this.el = el
-        this.chars = '!<>-_\\/[]{}—=+*^?#________'
-        this.update = this.update.bind(this)
-      }
-      setText(newText) {
-        const oldText = this.el.innerText
-        const length = Math.max(oldText.length, newText.length)
-        const promise = new Promise((resolve) => this.resolve = resolve)
-        this.queue = []
-        for (let i = 0; i < length; i++) {
-          const from = oldText[i] || ''
-          const to = newText[i] || ''
-          const start = Math.floor(Math.random() * 40)
-          const end = start + Math.floor(Math.random() * 40)
-          this.queue.push({ from, to, start, end })
-        }
-        cancelAnimationFrame(this.frameRequest)
-        this.frame = 0
-        this.update()
-        return promise
-      }
-      update() {
-        let output = ''
-        let complete = 0
-        for (let i = 0, n = this.queue.length; i < n; i++) {
-          let { from, to, start, end, char } = this.queue[i]
-          if (this.frame >= end) {
-            complete++
-            output += to
-          } else if (this.frame >= start) {
-            if (!char || Math.random() < 0.28) {
-              char = this.randomChar()
-              this.queue[i].char = char
+          <script>
+          class TextScramble {
+            constructor(el) {
+              this.el = el
+              this.chars = '!<>-_\\/[]{}—=+*^?#________'
+              this.update = this.update.bind(this)
             }
-            output += `<span class="dud">${char}</span>`
-          } else {
-            output += from
+            setText(newText) {
+              const oldText = this.el.innerText
+              const length = Math.max(oldText.length, newText.length)
+              const promise = new Promise((resolve) => this.resolve = resolve)
+              this.queue = []
+              for (let i = 0; i < length; i++) {
+                const from = oldText[i] || ''
+                const to = newText[i] || ''
+                const start = Math.floor(Math.random() * 40)
+                const end = start + Math.floor(Math.random() * 40)
+                this.queue.push({ from, to, start, end })
+              }
+              cancelAnimationFrame(this.frameRequest)
+              this.frame = 0
+              this.update()
+              return promise
+            }
+            update() {
+              let output = ''
+              let complete = 0
+              for (let i = 0, n = this.queue.length; i < n; i++) {
+                let { from, to, start, end, char } = this.queue[i]
+                if (this.frame >= end) {
+                  complete++
+                  output += to
+                } else if (this.frame >= start) {
+                  if (!char || Math.random() < 0.28) {
+                    char = this.randomChar()
+                    this.queue[i].char = char
+                  }
+                  output += `<span class="dud">${char}</span>`
+                } else {
+                  output += from
+                }
+              }
+              this.el.innerHTML = output
+              if (complete === this.queue.length) {
+                this.resolve()
+              } else {
+                this.frameRequest = requestAnimationFrame(this.update)
+                this.frame++
+              }
+            }
+            randomChar() {
+              return this.chars[Math.floor(Math.random() * this.chars.length)]
+            }
           }
-        }
-        this.el.innerHTML = output
-        if (complete === this.queue.length) {
-          this.resolve()
-        } else {
-          this.frameRequest = requestAnimationFrame(this.update)
-          this.frame++
-        }
-      }
-      randomChar() {
-        return this.chars[Math.floor(Math.random() * this.chars.length)]
-      }
-    }
 
-    // ——————————————————————————————————————————————————
-    // Example
-    // ——————————————————————————————————————————————————
+          // ——————————————————————————————————————————————————
+          // Example
+          // ——————————————————————————————————————————————————
 
-    const phrases = [
-      'Do not try and bend the spoon.',
-      'That’s impossible.',
-      'Instead…',
-      'only try to realize the truth.',
-      'What truth?',
-      'There is no spoon.',
-      'Then you’ll see,',
-      'that it is not the spoon that bends,',
-      'it is only yourself.'
-    ]
+          const phrases = [
+            'Do not try and bend the spoon.',
+            'That’s impossible.',
+            'Instead…',
+            'only try to realize the truth.',
+            'What truth?',
+            'There is no spoon.',
+            'Then you’ll see,',
+            'that it is not the spoon that bends,',
+            'it is only yourself.'
+          ]
 
-    const el = document.querySelector('.text')
-    const fx = new TextScramble(el)
+          const el = document.querySelector('.text')
+          const fx = new TextScramble(el)
 
-    let counter = 0
-    const next = () => {
-      fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 3000)
-      })
-      counter = (counter + 1) % phrases.length
-    }
+          let counter = 0
+          const next = () => {
+            fx.setText(phrases[counter]).then(() => {
+              setTimeout(next, 3000)
+            })
+            counter = (counter + 1) % phrases.length
+          }
 
-    next()
-    </script>
+          next()
+          </script>
 
-  <script src="./parallax.js"></script>
-    <script>
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene, {
-    });
-    </script>
+        <script src="./parallax.js"></script>
+          <script>
+          var scene = document.getElementById('scene');
+          var parallax = new Parallax(scene, {
+          });
+          </script>
 
-  <script src="simpleParallax.js"></script>
+        <script src="simpleParallax.js"></script>
 
-  <script>
-    var image = document.getElementsByClassName('thumbnail');
-  new simpleParallax(image, {
-  scale: 3.0
-  });
+        <script>
+          var image = document.getElementsByClassName('thumbnail');
+        new simpleParallax(image, {
+        scale: 3.0
+        });
 
-  var image = document.getElementsByClassName('thumbnail-2');
-new simpleParallax(image, {
-  orientation: 'right'
-});
+        var image = document.getElementsByClassName('thumbnail-2');
+      new simpleParallax(image, {
+        orientation: 'right'
+      });
 
-  </script>
+        </script>
 
-  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-    <script>
-      new Glide('.glide').mount()
-    </script>
+        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+          <script>
+            new Glide('.glide').mount()
+          </script
 
+    </section>
+  </div>
 </div>
-</div>
-</section>
+
 
