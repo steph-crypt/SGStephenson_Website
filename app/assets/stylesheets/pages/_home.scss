@@ -195,13 +195,20 @@ a:hover {
   justify-content: center;
   }
 
+.carousel-caption {
+  position: relative;
+
+
   p {
-     align-items: center;
+    position: absolute;
+    top: 50px;
+  align-items: center;
   text-align: center;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
+  // margin-top: 40px;
+  // display: flex;
+  // justify-content: center;
   }
+}
 }
 
 .website {
