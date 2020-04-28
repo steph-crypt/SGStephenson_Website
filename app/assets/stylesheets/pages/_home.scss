@@ -182,7 +182,7 @@ a:hover {
 }
 
 #projects {
-  margin-bottom: 140px;
+   margin-bottom: 100px;
 
   h2 {
   font-family: 'Montserrat Subrayada', sans-serif;
@@ -194,26 +194,34 @@ a:hover {
   display: flex;
   justify-content: center;
   position: absolute;
-    /* top: 5px; */
-    bottom: 1176px;
-    left: 421px;
-    font-size: 57px;
+  bottom: 1176px;
+  left: 421px;
+  font-size: 57px;
   }
 
+.slide {
+  position: relative;
+}
 
 .carousel-caption {
-  position: relative;
+ position: absolute;
+ top: 10px;
 
+  h5 {
+  position: absolute;
+  top: 60px;
+  left: 348px;
+ }
 
   p {
-    position: absolute;
-    top: 50px;
+  position: absolute;
+  bottom: -100px;
   align-items: center;
   text-align: center;
-  // margin-top: 40px;
-  // display: flex;
-  // justify-content: center;
-  }
+  padding-bottom: 40px;
+
+
+}
 }
 
 .carousel-indicators {
