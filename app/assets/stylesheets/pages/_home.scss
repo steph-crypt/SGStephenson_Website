@@ -195,6 +195,7 @@ a:hover {
   justify-content: center;
   }
 
+
 .carousel-caption {
   position: relative;
 
@@ -207,6 +208,15 @@ a:hover {
   // margin-top: 40px;
   // display: flex;
   // justify-content: center;
+  }
+}
+
+.carousel-indicators {
+
+  li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
   }
 }
 }
