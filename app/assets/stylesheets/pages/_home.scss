@@ -182,7 +182,8 @@ a:hover {
 }
 
 #projects {
-   margin-bottom: 100px;
+    height: 120vh;
+   // margin-bottom: 100px;
 
   h2 {
   font-family: 'Montserrat Subrayada', sans-serif;
@@ -203,9 +204,12 @@ a:hover {
   position: relative;
 }
 
-.carousel-caption {
- position: absolute;
- top: 10px;
+
+ .carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+
 
   h5 {
   position: absolute;
@@ -223,6 +227,8 @@ a:hover {
 
 }
 }
+
+.bg-dark
 
 .carousel-indicators {
 
