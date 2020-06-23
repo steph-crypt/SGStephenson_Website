@@ -275,16 +275,22 @@ footer {
   }
 }
 
-#linkedin {
+#social-media-links {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  // letter-spacing: 20px;
+
+  i {
+    font-size: 45px;
+  }
+
+}
+
+
+#linkedin {
+
 }
 
 #github {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+padding-left: 25px;
 }
