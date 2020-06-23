@@ -5,7 +5,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <%= render 'layouts/banner' %>
+        <%= render 'layouts/banner' %>
 
 <div class="section-B">
   <div id="section07" class="demo">
@@ -88,26 +88,13 @@
             }
           }
 
-          // ——————————————————————————————————————————————————
-          // Example
-          // ——————————————————————————————————————————————————
-
           const phrases = [
            'Frontend Developer.',
             'Translator.',
             'Lady.'
-            // 'Do not try and bend the spoon.',
-            // 'That’s impossible.',
-            // 'Instead…',
-            // 'only try to realize the truth.',
-            // 'What truth?',
-            // 'There is no spoon.',
-            // 'Then you’ll see,',
-            // 'that it is not the spoon that bends,',
-            // 'it is only yourself.'
           ]
 
-          const el = document.querySelector('.text')
+          const el = document.querySelector('.text-animation')
           const fx = new TextScramble(el)
 
           let counter = 0
@@ -119,7 +106,7 @@
           }
 
           next()
-          </script>
+        </script>
 
         <script src="./parallax.js"></script>
           <script>
