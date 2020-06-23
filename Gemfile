@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'webpacker', '~> 4.x'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'font-awesome-rails'
+gem 'websocket-extensions', '~> 0.1.5'
+gem 'activesupport', '~> 5.2', '>= 5.2.4.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
