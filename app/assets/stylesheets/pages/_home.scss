@@ -34,7 +34,7 @@ h1 {
   align-items: center;
   width: 100%;
   padding-top: -100px;
-  color: white;
+  color: black;
 }
 
 header h2 {
@@ -50,7 +50,7 @@ header h2 {
 
 h2 {
   font-family: 'Montserrat Subrayada', sans-serif;
-  color: white;
+  color: black;
   font-size: 45px;
   display: flex;
   justify-content: center;
@@ -102,7 +102,7 @@ h3 {
 
 #about-container h2 {
   font-family: 'Montserrat Subrayada', sans-serif;
-  color: white;
+  color: black;
   font-size: 45px;
   display: flex;
   justify-content: center;
@@ -117,7 +117,7 @@ h3 {
 }
 
 .about p {
-  color: white;
+  color: black;
   background: none;
   border: none;
 
@@ -130,7 +130,7 @@ h3 {
 
 
 section {
-  background-color: black;
+  background-color: white;
   position: absolute;
   border-top: 1px solid white;
 }
@@ -141,7 +141,7 @@ section {
     font-family: 'Lato', sans-serif;
     // font-family: 'Khand', sans-serif;
     padding: 24px;
-    color: white;
+    color: black;
     margin: 20px 20px;
     display: flex;
     align-items: center;
@@ -202,6 +202,7 @@ a:hover {
 
 .slide {
   position: relative;
+  color: black
 }
 
 
@@ -209,6 +210,8 @@ a:hover {
     position: relative;
     left: 0;
     top: 0;
+    color: black;
+
 
 
    .carousel-caption h5 {
@@ -236,6 +239,7 @@ a:hover {
     width: 10px;
     height: 10px;
     border-radius: 100%;
+    color: black;
   }
 }
 }
