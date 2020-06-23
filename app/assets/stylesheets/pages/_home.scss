@@ -132,7 +132,7 @@ h3 {
 section {
   background-color: white;
   position: absolute;
-  border-top: 1px solid white;
+  border-top: 3px solid black;
 }
 
  p {
@@ -181,6 +181,10 @@ a:hover {
 
 }
 
+.projects-contaner {
+  border-top: 2px solid $color-beta;
+}
+
 #projects {
     height: 120vh;
    // margin-bottom: 100px;
@@ -199,6 +203,7 @@ a:hover {
   left: 421px;
   font-size: 57px;
   }
+
 
 .slide {
   position: relative;
