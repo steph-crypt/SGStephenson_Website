@@ -181,14 +181,11 @@ section {
 
  p {
     font-size: 16px;
-    align-items: center;
     font-family: 'Lato', sans-serif;
     // font-family: 'Khand', sans-serif;
     padding: 24px;
     color: black;
     margin: 20px 20px;
-    display: flex;
-    align-items: center;
     border-radius: 15px;
     margin: 20px 130px;
  }
@@ -204,9 +201,18 @@ a {
     }
   }
 
+#technical-skills p {
+  text-align: center;
+  padding-top: 38px;
+
+  em {
+
+  }
+}
+
 #about-container {
   border-bottom: 2px solid $color-beta;
-  height: 115vh;
+  height: 112vh;
 }
 
 .projects-contaner {
