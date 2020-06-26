@@ -1,3 +1,5 @@
+.projects-contaner {
+
 .slide {
   position: relative;
   color: black
@@ -10,11 +12,11 @@
     color: black;
 
 
-   .carousel-caption h5 {
-  position: absolute;
-  top: 60px;
-  left: 348px;
- }
+ //   .carousel-caption h5 {
+ //  position: absolute;
+ //  top: 60px;
+ //  left: 348px;
+ // }
 
   .carousel-caption p {
   position: absolute;
@@ -24,25 +26,18 @@
   padding-bottom: 40px;
   }
 }
+}
 
 .projects-contaner .carousel-indicators {
 
   li {
-    // position: absolute;
-    // top: -80px;
     width: 10px;
     height: 10px;
     border-radius: 100%;
     color: black;
     background-color: black;
+    top: -500px;
   }
-
-  // ol {
-  //   width: 10px;
-  //   height: 10px;
-  //   border-radius: 100%;
-  //   color: black;
-  //}
 }
 
 .projects-contaner .carousel-control-prev-icon,
@@ -71,17 +66,6 @@
   color: red;
 }
 
-// .projects-contaner .carousel-control-prev {
-//   position: absolute;
-//   top: 1000px;
-//   background-color: black;
-// }
-
-// .projects-contaner .carousel-control-next {
-//   position: absolute;
-//   top: 1000px;
-//   background-color: black;
-//}
 
 .website img {
     // max-width: 600px;
