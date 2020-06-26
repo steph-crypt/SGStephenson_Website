@@ -17,7 +17,6 @@ header {
   position: absolute;
   z-index: 1000;
   top: 100px;
-  // left: 20px;
 
 }
 
@@ -149,15 +148,6 @@ section {
     margin: 20px 130px;
  }
 
-.links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
-}
-
-
 a {
     display: flex;
     justify-content: center;
@@ -169,16 +159,11 @@ a {
     }
   }
 
-a:hover {
-  color: red;
-}
-
 
 #about-container {
   height: 100vh;
   border-bottom: 2px solid $color-beta;
   height: 140vh;
-
 }
 
 .projects-contaner {
@@ -192,7 +177,6 @@ a:hover {
   h2 {
   font-family: 'Montserrat Subrayada', sans-serif;
   color: white;
-
   align-items: center;
   text-align: center;
   margin-top: 140px;
@@ -203,71 +187,7 @@ a:hover {
   left: 421px;
   font-size: 57px;
   }
-
-
-.slide {
-  position: relative;
-  color: black
 }
-
-
- .carousel-caption {
-    position: relative;
-    left: 0;
-    top: 0;
-    color: black;
-
-
-
-   .carousel-caption h5 {
-  position: absolute;
-  top: 60px;
-  left: 348px;
- }
-
-  .carousel-caption p {
-  position: absolute;
-  bottom: -100px;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 40px;
-
-
-}
-}
-
-.bg-dark
-
-.carousel-indicators {
-
-  li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    color: black;
-  }
-}
-}
-
-// .carousel-control-prev {
-//   position: absolute;
-//   top: 1000px;
-// }
-
-.website img {
-    max-width: 486px;
-    height: 468px;
-    border: 1px solid #61cd72;
-    border-radius: 10px;
-    margin-top: 55px;
-    // padding: 50px;
-    display: flex;
-    justify-content: center;
-      // outline: 5px solid black;
-      // outline-radius: 10px;
-
-}
-
 
 // font-family: 'Orbitron', sans-serif;
 // font-family: 'Montserrat Alternates', sans-serif;***
