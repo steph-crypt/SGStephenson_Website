@@ -222,35 +222,35 @@ a {
 #projects {
     height: 120vh;
    // margin-bottom: 100px;
+   position: relative;
 
   h2 {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  color: white;
-  align-items: center;
-  text-align: center;
-  margin-top: 140px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 1176px;
-  left: 486px;
-  font-size: 57px;
-  }
-}
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 140px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    bottom: 750px;
+    left: 460px;
+    font-size: 57px;
 
-// font-family: 'Orbitron', sans-serif;
+}
+  }
+
+
+
 // font-family: 'Montserrat Alternates', sans-serif;***
-// font-family: 'Khand', sans-serif;**
-// font-family: 'Julius Sans One', sans-serif;
-// font-family: 'Alegreya Sans SC', sans-serif;
-// font-family: 'Oxanium', cursive;
+
 
 
 #contact h2 {
  color: white;
  font-size: 40px;
-  padding-top: 30px;;
-  // border-bottom: 100px solid black;
+ padding: 30px;
+ font-family: 'Montserrat Alternates', sans-serif
+
 }
 
 footer {
@@ -265,6 +265,7 @@ footer {
     justify-content: center;
     text-align: center;
     color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
   }
 }
 
@@ -279,11 +280,12 @@ footer {
 
 }
 
-.fa-linkedin {
+a .fa-linkedin {
   color: $color-beta;
+  text-decoration: none;
 }
 
-.fa-github-square {
+a .fa-github-square {
   color: $color-beta;
 }
 
