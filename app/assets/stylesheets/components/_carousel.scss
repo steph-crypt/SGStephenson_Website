@@ -1,0 +1,98 @@
+.slide {
+  position: relative;
+  color: black
+}
+
+ .carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+    color: black;
+
+
+   .carousel-caption h5 {
+  position: absolute;
+  top: 60px;
+  left: 348px;
+ }
+
+  .carousel-caption p {
+  position: absolute;
+  bottom: -100px;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+  }
+}
+
+.projects-contaner .carousel-indicators {
+
+  li {
+    // position: absolute;
+    // top: -80px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    color: black;
+    background-color: black;
+  }
+
+  // ol {
+  //   width: 10px;
+  //   height: 10px;
+  //   border-radius: 100%;
+  //   color: black;
+  //}
+}
+
+.projects-contaner .carousel-control-prev-icon,
+.projects-contaner .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.projects-contaner .carousel-control-next-icon:after
+{
+  content: '>';
+  z-index: 1;
+  font-size: 55px;
+  color: red;
+}
+
+.projects-contaner .carousel-control-prev-icon:after {
+  content: '<';
+  z-index: 1;
+  font-size: 55px;
+  color: red;
+}
+
+// .projects-contaner .carousel-control-prev {
+//   position: absolute;
+//   top: 1000px;
+//   background-color: black;
+// }
+
+// .projects-contaner .carousel-control-next {
+//   position: absolute;
+//   top: 1000px;
+//   background-color: black;
+//}
+
+.website img {
+    // max-width: 600px;
+    // height: 468px;
+    // border: 1px solid #61cd72;
+    // border-radius: 10px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    display: flex;
+    justify-content: center;
+      // outline: 5px solid black;
+      // outline-radius: 10px;
+
+}
