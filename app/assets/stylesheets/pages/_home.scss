@@ -211,7 +211,7 @@ a {
 }
 
 #about-container {
-  border-bottom: 2px solid $color-beta;
+  // border-bottom: 2px solid $color-beta;
   height: 112vh;
 }
 
@@ -246,7 +246,10 @@ a {
 // font-family: 'Oxanium', cursive;
 
 
-#contact {
+#contact h2 {
+ color: white;
+ font-size: 40px;
+  padding-top: 30px;;
   // border-bottom: 100px solid black;
 }
 
