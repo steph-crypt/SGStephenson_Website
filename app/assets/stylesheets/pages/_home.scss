@@ -144,6 +144,10 @@ h3 {
   // background-color: black;
 }
 
+#about-height-container {
+  max-height: 100vh;
+}
+
 #about-container h2 {
   font-family: 'Montserrat Subrayada', sans-serif;
   color: black;
@@ -173,6 +177,7 @@ h3 {
   color: black;
   background: none;
   border: none;
+  max-height: 100vh;
 
   }
 
