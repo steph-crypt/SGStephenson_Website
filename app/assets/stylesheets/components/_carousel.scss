@@ -1,9 +1,14 @@
 .projects-contaner {
   height: 150vh;
+  position: relative;
 
 .slide {
   position: relative;
   color: black
+}
+
+h5 {
+  margin-top: -20px;
 }
 
  .carousel-caption {
@@ -30,13 +35,10 @@
 }
 
 .caption-text {
-  // width: 200px;
-  // min-width:200px;
-  // max-width:200px;
+  height:150px;
+  min-height:150px;
+  max-height:150px;
 
-  height:200px;
-  min-height:200px;
-  max-height:200px;
 }
 
 .projects-contaner .carousel-indicators {
@@ -51,7 +53,18 @@
   }
 }
 
-.projects-contaner .carousel-control-prev-icon,
+.projects-contaner .carousel-control-prev-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 29px solid black;
+  background-image: none;
+  margin-bottom: 130px;
+  margin-left: 90px;
+}
+
 .projects-contaner .carousel-control-next-icon {
   height: 100px;
   width: 100px;
@@ -60,8 +73,10 @@
   border-radius: 50%;
   border: 29px solid black;
   background-image: none;
-  margin-bottom: 220px;
+  margin-bottom: 130px;
+  margin-right: 90px;
 }
+
 
 .projects-contaner .carousel-control-next-icon:after
 {
@@ -69,6 +84,7 @@
   z-index: 1;
   font-size: 55px;
   color: red;
+
 }
 
 .projects-contaner .carousel-control-prev-icon:after {
@@ -76,6 +92,8 @@
   z-index: 1;
   font-size: 55px;
   color: red;
+  position: relative;
+  bottom: 10px;
 }
 
 
