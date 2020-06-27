@@ -280,18 +280,25 @@ footer {
   // letter-spacing: 20px;
 
   i {
-    font-size: 45px;
+    font-size: 50px;
   }
 
 }
 
 a .fa-linkedin {
   color: $color-beta;
-  text-decoration: none;
+}
+
+.fa-linkedin:hover {
+  color: #add4b4;
 }
 
 a .fa-github-square {
   color: $color-beta;
+}
+
+.fa-github-square:hover {
+  color: #add4b4;
 }
 
 #linkedin {
@@ -299,5 +306,5 @@ a .fa-github-square {
 }
 
 #github {
-padding-left: 25px;
+padding-left: 35px;
 }
