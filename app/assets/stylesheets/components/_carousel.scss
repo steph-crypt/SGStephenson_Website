@@ -33,17 +33,18 @@ h5 {
   max-height:150px;
 }
 
-// .projects-contaner .carousel-indicators {
+.projects-contaner .carousel-indicators {
 
-//   li {
-//     width: 10px;
-//     height: 10px;
-//     border-radius: 100%;
-//     color: black;
-//     background-color: black;
-//     top: -500px;
-//   }
-// }
+  li {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    color: black;
+    background-color: black;
+    top: -281px;
+    size: 20px;
+  }
+}
 
 .projects-contaner .carousel-control-prev-icon {
   height: 100px;
@@ -93,7 +94,6 @@ h5 {
   top: -25px;
   left: 40px;
 }
-
 
 .website img {
   margin-top: 55px;
