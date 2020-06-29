@@ -38,22 +38,27 @@ h5 {
   max-height:150px;
 }
 
+#indicator-override {
+  bottom: 29%;
+  margin-top: 619px;
+  top: -5px;
+
+}
+
 .projects-contaner .carousel-indicators {
 
   li {
     width: 14px;
     height: 14px;
     border-radius: 100%;
-    color: black;
     background-color: black;
-    top: -5px;
     size: 20px;
   }
 }
 
-.fixed-height {
-  height: -600px;
-}
+// .fixed-height {
+//   height: -600px;
+// }
 
 
 .projects-contaner .carousel-control-prev-icon {
@@ -110,4 +115,5 @@ h5 {
   margin-bottom: 55px;
   display: flex;
   justify-content: center;
+  max-width: 360px;
 }
