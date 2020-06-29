@@ -2,6 +2,11 @@
   height: 150vh;
   position: relative;
 
+.fixed-width {
+    min-width: 2000px;
+}
+
+
 .slide {
   position: relative;
   color: black
@@ -41,10 +46,15 @@ h5 {
     border-radius: 100%;
     color: black;
     background-color: black;
-    top: -281px;
+    top: -5px;
     size: 20px;
   }
 }
+
+.fixed-height {
+  height: -600px;
+}
+
 
 .projects-contaner .carousel-control-prev-icon {
   height: 100px;

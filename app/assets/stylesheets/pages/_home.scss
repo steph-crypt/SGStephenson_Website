@@ -8,6 +8,7 @@ html {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 header {
@@ -238,14 +239,17 @@ a {
   h2 {
     font-family: 'Montserrat Subrayada', sans-serif;
     color: white;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     margin-top: 140px;
     display: flex;
     position: absolute;
     z-index: 1;
     bottom: 750px;
-    left: 482px;
+    left: 50%;
     font-size: 57px;
+    margin-left: -154.5px;
 }
   }
 
