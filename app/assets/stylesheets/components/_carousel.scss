@@ -2,6 +2,23 @@
   height: 150vh;
   position: relative;
 
+.fixed-width {
+    min-width: 2000px;
+}
+
+#img-override {
+width: 66%!important;
+}
+
+.website img {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: center;
+  max-width: 360px;
+}
+
+
 .slide {
   position: relative;
   color: black
@@ -33,18 +50,28 @@ h5 {
   max-height:150px;
 }
 
+#indicator-override {
+  bottom: 29%;
+  margin-top: 619px;
+  top: -5px;
+
+}
+
 .projects-contaner .carousel-indicators {
 
   li {
     width: 14px;
     height: 14px;
     border-radius: 100%;
-    color: black;
     background-color: black;
-    top: -281px;
     size: 20px;
   }
 }
+
+// .fixed-height {
+//   height: -600px;
+// }
+
 
 .projects-contaner .carousel-control-prev-icon {
   height: 100px;
@@ -93,11 +120,4 @@ h5 {
   position: absolute;
   top: -25px;
   left: 40px;
-}
-
-.website img {
-  margin-top: 55px;
-  margin-bottom: 55px;
-  display: flex;
-  justify-content: center;
 }

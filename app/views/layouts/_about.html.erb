@@ -19,7 +19,18 @@
     </div>
     </div>
       <div class="photo col-12 col-lg-4">
-        <img src="sofia_blue3.jpg.png" alt="Sofia Photo">
+        <picture>
+          <img src="sofia_blue3.jpg.png" alt="Sofia Photo">
+        </picture>
+        <style>
+          picture { display: none; }
+
+          @media (min-width: 500px) {
+            picture {
+              display: block;
+            }
+          }
+        </style>
       </div>
     </div>
     <div id="technical-skills">
