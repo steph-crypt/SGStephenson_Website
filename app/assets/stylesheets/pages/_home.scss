@@ -151,6 +151,10 @@ h3 {
   max-height: 100vh;
 }
 
+#about-container {
+  height: 100vh;
+}
+
 #about-container h2 {
   font-family: 'Montserrat Subrayada', sans-serif;
   color: black;
@@ -172,8 +176,9 @@ h3 {
 
 .photo img {
   position: absolute;
-  top: 50%;
-  margin-top: -206px;
+    top: 65%;
+    margin-top: -206px;
+    right: 135px;
 
 }
 
@@ -217,16 +222,7 @@ a {
 
 #technical-skills p {
   text-align: center;
-  padding-top: 38px;
-
-  em {
-
-  }
-}
-
-#about-container {
-  // border-bottom: 2px solid $color-beta;
-  height: 112vh;
+  padding-top: 90px;
 }
 
 .projects-contaner {
