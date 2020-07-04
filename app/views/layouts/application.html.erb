@@ -4,7 +4,8 @@
     <title>SG Stephenson Web Developer</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Grand+Hotel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -18,8 +19,42 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
    </head>
+
     <body>
       <%= yield %>
+      <style>
+     @media (max-width: 550px) {
+
+      body {
+        width: 160%;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        height: 100%;
+       }
+
+       #name-header {
+        font-size: 20vw;
+        padding-top: 150px;
+        border-bottom: 100%;
+       }
+
+       .text-animation {
+        margin-bottom: 200px;
+       }
+
+    }
+
+
+   </style>
     </body>
+
+
+
 </html>
