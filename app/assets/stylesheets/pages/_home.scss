@@ -266,6 +266,20 @@ footer {
   background-color: #3c3b3c;
 }
 
+.photo-credit {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: column;
+  color: black;
+
+    a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 12px;
+    color: white;
+    }
+}
+
 #contact p {
     display: flex;
     justify-content: center;
