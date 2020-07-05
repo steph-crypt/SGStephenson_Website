@@ -44,6 +44,10 @@ h5 {
 }
 }
 
+  // .carousel-caption h3 {
+  //   display: none;
+  // }
+
 .caption-text {
   height:150px;
   min-height:150px;
@@ -54,7 +58,6 @@ h5 {
   bottom: 29%;
   margin-top: 619px;
   top: -5px;
-
 }
 
 .projects-contaner .carousel-indicators {
@@ -67,11 +70,6 @@ h5 {
     size: 20px;
   }
 }
-
-// .fixed-height {
-//   height: -600px;
-// }
-
 
 .projects-contaner .carousel-control-prev-icon {
   height: 100px;
@@ -100,8 +98,7 @@ h5 {
 }
 
 
-.projects-contaner .carousel-control-next-icon:after
-{
+.projects-contaner .carousel-control-next-icon:after {
   content: '>';
   z-index: 1;
   font-size: 55px;
