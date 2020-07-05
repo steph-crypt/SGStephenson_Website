@@ -5,6 +5,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <%= render 'layouts/banner' %>
 
 <!-- <div id="section01" class="demo">
@@ -16,15 +17,11 @@
     <a href="#section07"><span></span></a>
 
       <section class="section-c">
-
-        <%= render 'layouts/about' %>
-
-        <div>
-          <img class="thumbnail-2" src="alex-perez-copy.jpg" alt="Pattern" style="display: flex; justify-content: center; width: 100%; height: 325px;">
+        <div class="about-container-responsive">
+          <%= render 'layouts/about' %>
         </div>
-        <div class="main-container"></div>
-        <div class="main-container-2"></div>
-        <div class="main-container-3"></div>
+
+        <%= render 'layouts/projects_header' %>
 
         <%= render 'layouts/projects' %>
 
