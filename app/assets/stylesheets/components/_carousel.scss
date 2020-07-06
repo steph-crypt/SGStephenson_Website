@@ -1,4 +1,4 @@
-.projects-contaner {
+.projects-container {
   height: 150vh;
   position: relative;
 
@@ -60,7 +60,7 @@ h5 {
   top: -5px;
 }
 
-.projects-contaner .carousel-indicators {
+.projects-container .carousel-indicators {
 
   li {
     width: 14px;
@@ -71,7 +71,7 @@ h5 {
   }
 }
 
-.projects-contaner .carousel-control-prev-icon {
+.projects-container .carousel-control-prev-icon {
   height: 100px;
   width: 100px;
   outline: black;
@@ -84,7 +84,7 @@ h5 {
   position: relative;
 }
 
-.projects-contaner .carousel-control-next-icon {
+.projects-container .carousel-control-next-icon {
   height: 100px;
   width: 100px;
   outline: black;
@@ -98,7 +98,7 @@ h5 {
 }
 
 
-.projects-contaner .carousel-control-next-icon:after {
+.projects-container .carousel-control-next-icon:after {
   content: '>';
   z-index: 1;
   font-size: 55px;
@@ -108,7 +108,7 @@ h5 {
   right: 40px;
 }
 
-.projects-contaner .carousel-control-prev-icon:after {
+.projects-container .carousel-control-prev-icon:after {
   content: '<';
   z-index: 1;
   font-size: 55px;

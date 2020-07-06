@@ -30,6 +30,11 @@ li a {
   // -webkit-animation: blink 12s infinite;
 }
 
+li a:hover {
+  color: black;
+  text-decoration: none;
+}
+
 @-webkit-keyframes blink {
   20%,
   24%,
