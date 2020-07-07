@@ -25,6 +25,7 @@
         <style>
           html {
             scroll-behavior: smooth;
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
           }
 
          @media (max-width: 550px) {
@@ -39,7 +40,7 @@
             height: 100%;
            }
 
-           .links {
+          li a {
             display: none;
            }
 
@@ -92,11 +93,37 @@
 
         }
 
-        @media (min-width: 551px) and (max-width: 768px) {
+          @media (min-width: 551px) and (max-width: 729px) {
 
-          body {
-            width: 100%;
+         .row .photo img {
+            display: none;
           }
+
+          #about-container #technical-skills p {
+            display: none;
+          }
+
+          #about-container {
+            height: 100vh;
+          }
+
+          li a {
+            display: none;
+            }
+
+           #name-header {
+            font-size: 12vw;
+            padding-top: 150px;
+            border-bottom: 100%;
+           }
+
+            body .projects-container {
+            height: 105vh;
+            background: #3c3b3c;
+          }
+        }
+
+        @media (min-width: 730px) and (max-width: 768px) {
 
           header .text-animation {
             position: absolute;
@@ -108,6 +135,10 @@
             padding-top: 150px;
             border-bottom: 100%;
           }
+
+         header ul li a {
+            display: none;
+           }
 
           #about-container #technical-skills p {
             padding: 25px;
@@ -128,6 +159,35 @@
             background: #3c3b3c;
           }
       }
+
+      @media (min-width: 769px) and (max-width: 993px) {
+
+      .row .photo img {
+            display: none;
+          }
+
+         #about-container #technical-skills p {
+            padding: 25px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+          }
+        }
+
+        @media (min-width: 994px;) and (max-width: 1159px) {
+
+        body #about-container {
+            height: 1000vh;
+          }
+
+        }
+
+        @media (max-width: 1009px) {
+          header ul li a {
+            padding-left: 50px;
+            padding-right: 60px;
+
+          }
+        }
 
      </style>
     </body>
