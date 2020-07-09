@@ -15,10 +15,10 @@ Rails.application.configure do
   config.action_controller.perform_caching = true
 
    MyApp::Application.configure do
-    ...
+
     # set the relative root, because we're deploying to /myrailsapp
     config.action_controller.relative_url_root  = "/myrailsapp"
-    ...
+
   end
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
