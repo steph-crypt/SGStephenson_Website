@@ -14,13 +14,19 @@ $header-size: 45px;
 // properties
 $angle: skewY(30.0deg);
 
-//mixins
+// mixins
 @mixin transform($angle) {
   -webkit-transform: $angle;
   -moz-transform: $angle;
   -ms-transform: $angle;
   -o-transform: $angle;
   -webkit-backface-visibility: hidden;
+}
+
+// extends
+%justify-flex-center {
+  display: flex;
+  justify-content: center;
 }
 
 html {
@@ -32,10 +38,6 @@ html {
   overflow-y: auto;
   margin:0 auto;
 }
-
-// @mixin display-flex($center) {
-
-// }
 
 header {
   display: flex!important;
@@ -67,11 +69,10 @@ header h2 {
 }
 
 h2 {
+  @extend %justify-flex-center;
   font-family: $header-font;
   font-size: $header-size;
   color: $black;
-  display: flex;
-  justify-content: center;
   margin-top: 100px;
 }
 
@@ -190,10 +191,9 @@ section {
 }
 
 a {
+    @extend %justify-flex-center;
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 25px;
-    display: flex;
-    justify-content: center;
     &:hover {
     }
   }
@@ -255,18 +255,16 @@ footer {
 }
 
 #contact p {
+  @extend %justify-flex-center;
   font-family: $text-font;
   font-size: 20px;
   color: $white;
-  display: flex;
-  justify-content: center;
   padding-bottom: 25px;
   margin-top: -15px;
 }
 
 #social-media-links {
-  display: flex;
-  justify-content: center;
+  @extend %justify-flex-center;
 
   i {
     font-size: 50px;
