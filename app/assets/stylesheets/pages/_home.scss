@@ -87,56 +87,47 @@ h3 {
   padding-top: 30px;
 }
 
-// slanted bars //
-.main-container {
-  color: $white;
-  background: #169fe6;
-  position: relative;
-}
-
-.main-container:before {
+// _____slanted bars_____ //
+%black-bar-base {
   content: '';
   position: absolute;
   left: 0;
-  top: -150px;
   width: 100%;
-  height: 100px;
   background: $black;
+}
+
+.black-bar-left {
+  position: relative;
+}
+
+.black-bar-left:before {
+  @extend %black-bar-base;
+  top: -150px;
+  height: 100px;
   @include transform(skewY(30.0deg));
   transform: skewY(30.0deg);
 }
 
-.main-container-2 {
-  color: $white;
+.black-bar-horizontal {
   position: relative;
 }
 
-.main-container-2:before {
-  content: '';
-  position: absolute;
-  left: 0;
+.black-bar-horizontal:before {
+  @extend %black-bar-base;
   top: -65px;
-  width: 100%;
   height: 67px;
-  background: $black;
   @include transform(skewY(30.0deg));
   transform: skewY(180.0deg);
-
 }
 
-.main-container-3 {
-  color: $white;
+.black-bar-right {
   position: relative;
 }
 
-.main-container-3:before {
-  content: '';
-  position: absolute;
-  left: 0;
+.black-bar-right:before {
+  @extend %black-bar-base;
   top: -149px;
-  width: 100%;
   height: 100px;
-  background: $black;
   @include transform(skewY(30.0deg));
   transform: skewY(150.0deg);
 }
@@ -230,7 +221,6 @@ a {
   font-size: 40px;
   color: $white;
   padding: 30px;
-
 }
 
 footer {
