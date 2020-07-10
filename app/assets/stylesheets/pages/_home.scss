@@ -1,11 +1,20 @@
+// colors
 $color-alpha: #eeeeee;
 $color-beta: #2ecc71;
 $color-gamma: #333333;
 $white: #fff;
+$black: #000000;
+$hover-green: #add4b4;
+
+// fonts
 $header-font: 'Montserrat Subrayada', sans-serif;
 $text-font: 'Montserrat Alternates', sans-serif;
+$header-size: 45px;
+
+// properties
 $angle: skewY(30.0deg);
 
+//mixins
 @mixin transform($angle) {
   -webkit-transform: $angle;
   -moz-transform: $angle;
@@ -24,62 +33,52 @@ html {
   margin:0 auto;
 }
 
+// @mixin display-flex($center) {
+
+// }
+
 header {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  width: 100%;
   display: flex!important;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  text-shadow: 5px 4px 14px black;
+  height: 100vh;
+  width: 100%;
+  text-shadow: 5px 4px 14px $black;
   position: absolute;
   z-index: 1000;
   top: 100px;
 }
 
 h1 {
-  text-align: center;
-  font-weight: 300;
-  border-bottom: 2px solid $color-beta;
   font-family: $header-font;
   font-size: 95px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-weight: 300;
+  border-bottom: 2px solid $color-beta;
   width: 100%;
   padding-top: -100px;
-  color: black;
+  color: $black;
 }
 
 header h2 {
   font-family: $header-font;
-  font-size: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-size: $header-size;
   margin-top: 40px;
   padding-top: 100px;
 }
 
 h2 {
   font-family: $header-font;
-  color: black;
-  font-size: 45px;
+  font-size: $header-size;
+  color: $black;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-top: 100px;
 }
 
 h3 {
   font-family: 'Lato', sans-serif;
+  font-size: $header-size;
   color: #9a9a9a;
-  font-size: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,9 +88,9 @@ h3 {
 
 // slanted bars //
 .main-container {
+  color: $white;
   background: #169fe6;
   position: relative;
-  color: $white;
 }
 
 .main-container:before {
@@ -101,32 +100,32 @@ h3 {
   top: -150px;
   width: 100%;
   height: 100px;
-  background: black;
+  background: $black;
   @include transform(skewY(30.0deg));
   transform: skewY(30.0deg);
 }
 
 .main-container-2 {
-  position: relative;
   color: $white;
+  position: relative;
 }
 
 .main-container-2:before {
   content: '';
   position: absolute;
   left: 0;
-    top: -65px;
-    width: 100%;
-    height: 67px;
-    background: black;
+  top: -65px;
+  width: 100%;
+  height: 67px;
+  background: $black;
   @include transform(skewY(30.0deg));
   transform: skewY(180.0deg);
 
 }
 
 .main-container-3 {
-  position: relative;
   color: $white;
+  position: relative;
 }
 
 .main-container-3:before {
@@ -136,11 +135,10 @@ h3 {
   top: -149px;
   width: 100%;
   height: 100px;
-  background: black;
+  background: $black;
   @include transform(skewY(30.0deg));
   transform: skewY(150.0deg);
 }
-
 
 .section-B {
   position: relative;
@@ -151,23 +149,14 @@ h3 {
 
 #about-container h2 {
   font-family: $header-font;
-  color: black;
-  font-size: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  color: $black;
+  font-size: $header-size;
   margin-top: 40px;
   text-shadow: 2px 1px 2px #cc70db;
 }
 
 .about {
   max-height: nowrap;
-}
-
-.about h2 {
-  display: flex;
-  justify-content: center;
 }
 
 .photo img {
@@ -179,33 +168,32 @@ h3 {
 
 .about p {
   overflow: scroll;
-  color: black;
+  color: $black;
   background: none;
   border: none;
   max-height: 100vh;
 }
 
 section {
-  background-color: white;
+  background-color: $white;
   position: absolute;
 }
 
  p {
-    font-size: 17px;
     font-family: 'Lato', sans-serif;
+    font-size: 17px;
     padding: 24px;
-    color: black;
+    color: $black;
     margin: 20px 20px;
     border-radius: 15px;
     margin: 20px 130px;
 }
 
 a {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 25px;
     display: flex;
     justify-content: center;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-family: 'Bai Jamjuree', sans-serif;
     &:hover {
     }
   }
@@ -220,33 +208,29 @@ a {
 }
 
 #projects {
-    height: 120vh;
-   position: relative;
-
+  height: 120vh;
+  position: relative;
  }
 
  #projects h2 {
   font-family: $header-font;
-  color: white;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  font-size: 57px;
+  color: $white;
   margin-top: 140px;
-  display: flex;
   position: absolute;
   z-index: 1;
   bottom: 99%;
   left: 50%;
-  font-size: 57px;
   margin-left: -154.5px;
   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
 }
 
 #contact h2 {
- color: white;
- font-size: 40px;
- padding: 30px;
- font-family: $text-font;
+  font-family: $text-font;
+  font-size: 40px;
+  color: $white;
+  padding: 30px;
+
 }
 
 footer {
@@ -259,7 +243,7 @@ footer {
   font-size: 12px;
   display: flex;
   justify-content: flex-end;
-  color: black;
+  color: $black;
   padding-right: 5px;
 
     a {
@@ -267,29 +251,26 @@ footer {
     font-size: 12px;
     color: gray;
     padding-left: 5px
-    }
+  }
 }
 
 #contact p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-family: $text-font;
-    font-size: 20px;
-    padding-bottom: 25px;
-    margin-top: -15px;
-  }
+  font-family: $text-font;
+  font-size: 20px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+  margin-top: -15px;
+}
 
 #social-media-links {
   display: flex;
   justify-content: center;
-  // letter-spacing: 20px;
 
   i {
     font-size: 50px;
   }
-
 }
 
 a .fa-linkedin {
@@ -297,7 +278,7 @@ a .fa-linkedin {
 }
 
 .fa-linkedin:hover {
-  color: #add4b4;
+  color: $hover-green;
 }
 
 a .fa-github-square {
@@ -305,11 +286,11 @@ a .fa-github-square {
 }
 
 .fa-github-square:hover {
-  color: #add4b4;
+  color: $hover-green;
 }
 
 #github {
-padding-left: 35px;
+  padding-left: 35px;
   }
 }
 
