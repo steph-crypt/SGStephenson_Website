@@ -1,9 +1,29 @@
+%control-direction {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 29px solid black;
+  background-image: none;
+  margin-bottom: 130px;
+  position: relative;
+}
+
+%control-after {
+  z-index: 1;
+  font-size: 55px;
+  color: red;
+  position: absolute;
+  top: -25px;
+}
+
 .projects-container {
   height: 150vh;
   position: relative;
 
 .fixed-width {
-    min-width: 2000px;
+  min-width: 2000px;
 }
 
 #img-override {
@@ -17,7 +37,6 @@ width: 66%!important;
   justify-content: center;
   max-width: 360px;
 }
-
 
 .slide {
   position: relative;
@@ -34,22 +53,15 @@ h5 {
     top: 0;
     color: black;
 
-  .carousel-caption p {
-  position: absolute;
-  bottom: -100px;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 40px;
+    .carousel-caption p {
+      position: absolute;
+      bottom: -100px;
+      padding-bottom: 40px;
+      }
   }
 }
-}
-
-  // .carousel-caption h3 {
-  //   display: none;
-  // }
 
 .caption-text {
-  height:150px;
   min-height:150px;
   max-height:150px;
 }
@@ -72,49 +84,23 @@ h5 {
 }
 
 .projects-container .carousel-control-prev-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 29px solid black;
-  background-image: none;
-  margin-bottom: 130px;
+  @extend %control-direction;
   margin-left: 90px;
-  position: relative;
 }
 
 .projects-container .carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 29px solid black;
-  background-image: none;
-  margin-bottom: 130px;
+  @extend %control-direction;
   margin-right: 90px;
-  position: relative;
 }
 
-
 .projects-container .carousel-control-next-icon:after {
+  @extend %control-after;
   content: '>';
-  z-index: 1;
-  font-size: 55px;
-  color: red;
-  position: absolute;
-  top: -25px;
   right: 40px;
 }
 
 .projects-container .carousel-control-prev-icon:after {
+  @extend %control-after;
   content: '<';
-  z-index: 1;
-  font-size: 55px;
-  color: red;
-  bottom: 10px;
-  position: absolute;
-  top: -25px;
   left: 40px;
 }

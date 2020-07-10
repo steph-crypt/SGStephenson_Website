@@ -1,6 +1,33 @@
+// colors
 $color-alpha: #eeeeee;
 $color-beta: #2ecc71;
 $color-gamma: #333333;
+$white: #fff;
+$black: #000000;
+$hover-green: #add4b4;
+
+// fonts
+$header-font: 'Montserrat Subrayada', sans-serif;
+$text-font: 'Montserrat Alternates', sans-serif;
+$header-size: 45px;
+
+// properties
+$angle: skewY(30.0deg);
+
+// mixins
+@mixin transform($angle) {
+  -webkit-transform: $angle;
+  -moz-transform: $angle;
+  -ms-transform: $angle;
+  -o-transform: $angle;
+  -webkit-backface-visibility: hidden;
+}
+
+// extends
+%justify-flex-center {
+  display: flex;
+  justify-content: center;
+}
 
 html {
   width: 100%;
@@ -12,64 +39,47 @@ html {
   margin:0 auto;
 }
 
-
 header {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  width: 100%;
   display: flex!important;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  text-shadow: 5px 4px 14px black;
+  height: 100vh;
+  width: 100%;
+  text-shadow: 5px 4px 14px $black;
   position: absolute;
   z-index: 1000;
   top: 100px;
 }
 
-
 h1 {
-  text-align: center;
+  font-family: $header-font;
+  font-size: 95px;
   font-weight: 300;
   border-bottom: 2px solid $color-beta;
-  font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 95px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   padding-top: -100px;
-  color: black;
+  color: $black;
 }
 
 header h2 {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  font-size: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-family: $header-font;
+  font-size: $header-size;
   margin-top: 40px;
   padding-top: 100px;
 }
 
 h2 {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  color: black;
-  font-size: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  @extend %justify-flex-center;
+  font-family: $header-font;
+  font-size: $header-size;
+  color: $black;
   margin-top: 100px;
 }
 
 h3 {
   font-family: 'Lato', sans-serif;
+  font-size: $header-size;
   color: #9a9a9a;
-  font-size: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,11 +87,11 @@ h3 {
   padding-top: 30px;
 }
 
-// slant
+// slanted bars //
 .main-container {
+  color: $white;
   background: #169fe6;
   position: relative;
-  color: #FFFFFF;
 }
 
 .main-container:before {
@@ -91,59 +101,45 @@ h3 {
   top: -150px;
   width: 100%;
   height: 100px;
-  background: black;
-  -webkit-transform: skewY(30.0deg);
-  -moz-transform: skewY(30.0deg);
-  -ms-transform: skewY(30.0deg);
-  -o-transform: skewY(30.0deg);
+  background: $black;
+  @include transform(skewY(30.0deg));
   transform: skewY(30.0deg);
-  -webkit-backface-visibility: hidden;
 }
 
 .main-container-2 {
-  background: #169fe6;
+  color: $white;
   position: relative;
-  color: #FFFFFF;
 }
 
 .main-container-2:before {
   content: '';
   position: absolute;
   left: 0;
-    top: -65px;
-    width: 100%;
-    height: 67px;
-    background: black;
-  -webkit-transform: skewY(30.0deg);
-  -moz-transform: skewY(30.0deg);
-  -ms-transform: skewY(30.0deg);
-  -o-transform: skewY(30.0deg);
+  top: -65px;
+  width: 100%;
+  height: 67px;
+  background: $black;
+  @include transform(skewY(30.0deg));
   transform: skewY(180.0deg);
-  -webkit-backface-visibility: hidden;
+
 }
 
 .main-container-3 {
-  background: #169fe6;
+  color: $white;
   position: relative;
-  color: #FFFFFF;
 }
 
 .main-container-3:before {
   content: '';
   position: absolute;
   left: 0;
-    top: -149px;
-    width: 100%;
-    height: 100px;
-    background: black;
-  -webkit-transform: skewY(30.0deg);
-  -moz-transform: skewY(30.0deg);
-  -ms-transform: skewY(30.0deg);
-  -o-transform: skewY(30.0deg);
+  top: -149px;
+  width: 100%;
+  height: 100px;
+  background: $black;
+  @include transform(skewY(30.0deg));
   transform: skewY(150.0deg);
-  -webkit-backface-visibility: hidden;
 }
-
 
 .section-B {
   position: relative;
@@ -153,13 +149,9 @@ h3 {
 }
 
 #about-container h2 {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  color: black;
-  font-size: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-family: $header-font;
+  color: $black;
+  font-size: $header-size;
   margin-top: 40px;
   text-shadow: 2px 1px 2px #cc70db;
 }
@@ -167,52 +159,41 @@ h3 {
 .about {
   max-height: nowrap;
 }
-.about h2 {
-  display: flex;
-  justify-content: center;
-}
 
 .photo img {
   position: absolute;
-    top: 65%;
-    margin-top: -206px;
-    right: 135px;
-
+  top: 65%;
+  margin-top: -206px;
+  right: 135px;
 }
 
 .about p {
   overflow: scroll;
-  color: black;
+  color: $black;
   background: none;
   border: none;
   max-height: 100vh;
-  }
-
+}
 
 section {
-  background-color: white;
+  background-color: $white;
   position: absolute;
-  // border-top: 3px solid black;
 }
 
  p {
-    font-size: 17px;
     font-family: 'Lato', sans-serif;
-    // font-family: 'Khand', sans-serif;
+    font-size: 17px;
     padding: 24px;
-    color: black;
+    color: $black;
     margin: 20px 20px;
     border-radius: 15px;
     margin: 20px 130px;
- }
+}
 
 a {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    // color: white;
-    font-size: 25px;
+    @extend %justify-flex-center;
     font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 25px;
     &:hover {
     }
   }
@@ -227,80 +208,67 @@ a {
 }
 
 #projects {
-    height: 120vh;
-   position: relative;
-
+  height: 120vh;
+  position: relative;
  }
 
  #projects h2 {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  color: white;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  font-family: $header-font;
+  font-size: 57px;
+  color: $white;
   margin-top: 140px;
-  display: flex;
   position: absolute;
   z-index: 1;
   bottom: 99%;
   left: 50%;
-  font-size: 57px;
   margin-left: -154.5px;
   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
 }
 
-
 #contact h2 {
- color: white;
- font-size: 40px;
- padding: 30px;
- font-family: 'Montserrat Alternates', sans-serif
+  font-family: $text-font;
+  font-size: 40px;
+  color: $white;
+  padding: 30px;
 
 }
 
 footer {
   padding-bottom: 1px;
-  // border-top: 2px solid #61cd72;
   background-color: #3c3b3c;
 }
 
 .photo-credit {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: $text-font;
   font-size: 12px;
   display: flex;
   justify-content: flex-end;
-  color: black;
+  color: $black;
   padding-right: 5px;
 
     a {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: $text-font;
     font-size: 12px;
     color: gray;
     padding-left: 5px
-    }
+  }
 }
 
 #contact p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 20px;
-    padding-bottom: 25px;
-    margin-top: -15px;
-  }
-
+  @extend %justify-flex-center;
+  font-family: $text-font;
+  font-size: 20px;
+  color: $white;
+  padding-bottom: 25px;
+  margin-top: -15px;
+}
 
 #social-media-links {
-  display: flex;
-  justify-content: center;
-  // letter-spacing: 20px;
+  @extend %justify-flex-center;
 
   i {
     font-size: 50px;
   }
-
 }
 
 a .fa-linkedin {
@@ -308,7 +276,7 @@ a .fa-linkedin {
 }
 
 .fa-linkedin:hover {
-  color: #add4b4;
+  color: $hover-green;
 }
 
 a .fa-github-square {
@@ -316,15 +284,11 @@ a .fa-github-square {
 }
 
 .fa-github-square:hover {
-  color: #add4b4;
-}
-
-#linkedin {
-
+  color: $hover-green;
 }
 
 #github {
-padding-left: 35px;
-}
+  padding-left: 35px;
+  }
 }
 
