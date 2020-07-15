@@ -17,9 +17,7 @@
     <a href="#section07"><span></span></a>
 
       <section class="section-c">
-     <!--    <div class="about-container-responsive"> -->
-          <%= render 'layouts/about' %>
-       <!--  </div> -->
+        <%= render 'layouts/about' %>
 
         <%= render 'layouts/projects_header' %>
 
@@ -27,44 +25,6 @@
 
         <%= render 'layouts/footer' %>
 
-
-<!-- <script>
-
-
-// // Scroll certain amounts from current position
-// window.scrollBy({
-//   top: 1000, // could be negative value
-//   left: 0,
-//   behavior: 'smooth'
-// });
-
-// Scroll to a certain element
-document.querySelector('.carousel-item').scrollIntoView({
-  behavior: 'smooth'
-})
-</script> -->
-
-    <script>
-          jQuery(document).ready(function(){
-  if( $('.cd-stretchy-nav').length > 0 ) {
-    var stretchyNavs = $('.cd-stretchy-nav');
-
-    stretchyNavs.each(function(){
-      var stretchyNav = $(this),
-        stretchyNavTrigger = stretchyNav.find('.cd-nav-trigger');
-
-      stretchyNavTrigger.on('click', function(event){
-        event.preventDefault();
-        stretchyNav.toggleClass('nav-is-visible');
-      });
-    });
-
-    $(document).on('click', function(event){
-      ( !$(event.target).is('.cd-nav-trigger') && !$(event.target).is('.cd-nav-trigger span') ) && stretchyNavs.removeClass('nav-is-visible');
-    });
-  }
-});
-        </script>
 
           <script>
             $(function() {
@@ -170,7 +130,6 @@ document.querySelector('.carousel-item').scrollIntoView({
         var image = document.getElementsByClassName('banner-img-2');
       new simpleParallax(image, {
         scale: 3.0
-        // orientation: 'right'
       });
 
         </script>
