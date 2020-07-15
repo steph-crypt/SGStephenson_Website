@@ -31,6 +31,7 @@ gem 'font-awesome-rails'
 gem 'websocket-extensions', '~> 0.1.5'
 gem 'activesupport', '~> 5.2', '>= 5.2.4.3'
 gem 'railties', '~> 5.2', '>= 5.2.4.3'
+gem 'bootstrap', '~> 4.2.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
