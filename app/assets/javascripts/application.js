@@ -15,7 +15,7 @@
 //= require_tree .
 
 require("bootstrap/dist/js/bootstrap")
-import 'core-js/stable'
+// import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 import 'bootstrap'
 import './src/application.scss'
