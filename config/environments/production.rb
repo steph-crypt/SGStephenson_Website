@@ -13,12 +13,12 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-   MyApp::Application.configure do
+  #  MyApp::Application.configure do
 
-    # set the relative root, because we're deploying to /myrailsapp
-    config.action_controller.relative_url_root  = "/myrailsapp"
+  #   # set the relative root, because we're deploying to /myrailsapp
+  #   config.action_controller.relative_url_root  = "/myrailsapp"
 
-  end
+  # end
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
