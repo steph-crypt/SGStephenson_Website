@@ -25,7 +25,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'webpacker', '~> 4.x'
+# gem 'webpacker', '~> 4.x'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'font-awesome-rails'
 # gem 'websocket-extensions', '~> 0.1.5'
