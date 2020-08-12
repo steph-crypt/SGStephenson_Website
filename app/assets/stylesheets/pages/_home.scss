@@ -178,6 +178,7 @@ section {
 
 .black-bar-horizontal {
   position: relative;
+  top: 100px;
 }
 
 .black-bar-horizontal:before {
@@ -202,6 +203,7 @@ section {
 
 .projects-container {
   border-top: 2px solid $color-beta;
+  height: 187vh;
 }
 
 #projects {
@@ -213,14 +215,14 @@ section {
   font-family: $header-font;
   font-size: 57px;
   color: $white;
-  margin-top: 140px;
-  position: absolute;
-  z-index: 1;
-  bottom: 99%;
-  left: 50%;
-  margin-left: -154.5px;
+  // margin-top: 140px;
+  // position: absolute;
+  // z-index: 1;
+  // bottom: 85%;
+  // left: 50%;
+  // margin-left: -154.5px;
   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-}
+ }
 
 //------contact--------//
 
