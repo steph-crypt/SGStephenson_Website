@@ -1,6 +1,6 @@
 #carouselExampleFade {
   position: relative;
-  // top: 100px;
+  top: -67px;
 }
 
 %control-direction {
@@ -8,8 +8,8 @@
   width: 100px;
   outline: black;
   background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 29px solid black;
+  // border-radius: 50%;
+  // border: 10px solid #61cd72k;
   background-image: none;
   margin-bottom: 130px;
   position: relative;
@@ -17,7 +17,8 @@
 
 %control-after {
   z-index: 1;
-  font-size: 55px;
+  font-size: 80px;
+  font-weight: bolder;
   color: red;
   position: absolute;
   top: -25px;
@@ -56,12 +57,13 @@ h5 {
     position: relative;
     left: 0;
     top: 0;
-    color: black;
+    color: white;
 
     .carousel-caption p {
       position: absolute;
       bottom: -100px;
       padding-bottom: 40px;
+      color: white;
       }
   }
 }
