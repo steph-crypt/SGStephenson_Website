@@ -109,9 +109,11 @@ a {
 #about-container h2 {
   font-family: $header-font;
   color: $black;
-  font-size: $header-size;
+  // font-size: $header-size;
   margin-top: 40px;
   text-shadow: 2px 1px 2px #cc70db;
+  font-size: 57px;
+  margin-top: 60px;
 }
 
 .about {
@@ -127,6 +129,7 @@ a {
 
 .about p {
   overflow: scroll;
+  text-align: center;
   color: $black;
   background: none;
   border: none;
@@ -146,11 +149,14 @@ section {
     margin: 20px 20px;
     border-radius: 15px;
     margin: 20px 130px;
+    text-align: center;
 }
 
 #technical-skills p {
   text-align: center;
-  padding-top: 90px;
+  margin-top: 50px;
+  // padding-top: 90px;
+  border: 1px solid black;
 }
 
 //------projects header------//
