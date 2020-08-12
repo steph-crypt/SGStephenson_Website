@@ -100,7 +100,24 @@ a {
 .section-B {
   position: relative;
 
+
+ p {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    padding: 24px;
+    color: $white;
+    margin: 20px 20px;
+    border-radius: 15px;
+    margin: 20px 130px;
+    text-align: center;
+}
+
 //-------about------//
+
+section {
+  background-color: $white;
+  position: absolute;
+}
 
 #about-height-container {
   max-height: 100vh;
@@ -110,10 +127,9 @@ a {
   font-family: $header-font;
   color: $black;
   // font-size: $header-size;
-  margin-top: 40px;
   text-shadow: 2px 1px 2px #cc70db;
   font-size: 57px;
-  margin-top: 60px;
+  margin-top: 135px;
 }
 
 .about {
@@ -127,7 +143,7 @@ a {
   right: 135px;
 }
 
-.about p {
+#about-height-container p {
   overflow: scroll;
   text-align: center;
   color: $black;
@@ -136,27 +152,12 @@ a {
   max-height: 100vh;
 }
 
-section {
-  background-color: $white;
-  position: absolute;
-}
-
- p {
-    font-family: 'Lato', sans-serif;
-    font-size: 17px;
-    padding: 24px;
-    color: $white;
-    margin: 20px 20px;
-    border-radius: 15px;
-    margin: 20px 130px;
-    text-align: center;
-}
-
 #technical-skills p {
   text-align: center;
   margin-top: 50px;
   // padding-top: 90px;
   border: 1px solid black;
+  color: black;
 }
 
 //------projects header------//
