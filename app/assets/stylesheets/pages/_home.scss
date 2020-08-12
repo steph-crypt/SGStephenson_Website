@@ -226,8 +226,10 @@ section {
 
 .projects-container {
   border-top: 2px solid $color-beta;
-  height: 187vh;
+  border-bottom: 2px solid $color-beta;
+  height: 170vh;
   background: $black;
+
 }
 
 #projects {
