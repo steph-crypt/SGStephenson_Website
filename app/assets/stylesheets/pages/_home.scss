@@ -178,8 +178,10 @@ section {
   @extend %black-bar-base;
   top: -150px;
   height: 100px;
+  border-top: 2px solid #61cd72;
+  border-bottom: 2px solid #61cd72;
   @include transform(skewY(30.0deg));
-  transform: skewY(30.0deg);
+  transform: skewY(25.0deg);
 }
 
 .black-bar-horizontal {
@@ -190,7 +192,7 @@ section {
 .black-bar-horizontal:before {
   @extend %black-bar-base;
   top: -200px;
-  height: 67px;
+  height: 98px;
   @include transform(skewY(30.0deg));
   transform: skewY(180.0deg);
 }
@@ -216,13 +218,16 @@ section {
   @extend %black-bar-base;
   top: -149px;
   height: 100px;
+  border-top: 2px solid #61cd72;
+  border-bottom: 2px solid #61cd72;
   @include transform(skewY(30.0deg));
-  transform: skewY(150.0deg);
+  transform: skewY(155.0deg);
 }
 
 .projects-container {
   border-top: 2px solid $color-beta;
   height: 187vh;
+  background: #3c3b3c;
 }
 
 #projects {
@@ -234,6 +239,9 @@ section {
   font-family: $header-font;
   font-size: 57px;
   color: $white;
+  position: relative;
+  z-index: 1;
+  top: -87px;
   // margin-top: 140px;
   // position: absolute;
   // z-index: 1;
