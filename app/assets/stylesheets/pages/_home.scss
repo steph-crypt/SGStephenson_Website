@@ -183,7 +183,20 @@ section {
 
 .black-bar-horizontal:before {
   @extend %black-bar-base;
-  top: -65px;
+  top: -200px;
+  height: 67px;
+  @include transform(skewY(30.0deg));
+  transform: skewY(180.0deg);
+}
+
+.black-bar-horizontal-2 {
+  position: relative;
+  top: 100px;
+}
+
+.black-bar-horizontal-2:before {
+  @extend %black-bar-base;
+  top: -260px;
   height: 67px;
   @include transform(skewY(30.0deg));
   transform: skewY(180.0deg);
