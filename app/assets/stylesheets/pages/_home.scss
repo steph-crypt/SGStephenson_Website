@@ -129,7 +129,8 @@ section {
   // font-size: $header-size;
   text-shadow: 2px 1px 2px #cc70db;
   font-size: 57px;
-  margin-top: 135px;
+  margin-top: 50px;
+
 }
 
 .about {
@@ -259,7 +260,7 @@ section {
 
 footer {
   padding-bottom: 1px;
-  background-color: #3c3b3c;
+  background-color: $black;
 }
 
 #contact h2 {
@@ -275,7 +276,7 @@ footer {
   font-family: $text-font;
   font-size: 20px;
   color: $white;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   margin-top: -15px;
 }
 
@@ -284,10 +285,8 @@ footer {
   font-size: 12px;
   display: flex;
   justify-content: flex-end;
-  color: $black;
+  color: gray;
   padding-right: 5px;
-  margin-bottom: -377px;
-  margin-top: 266px;
 
     a {
     font-family: $text-font;
