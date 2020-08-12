@@ -10,6 +10,8 @@
   background-size: 100%, 100%;
   // border-radius: 50%;
   // border: 10px solid #61cd72k;
+  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+    color: #fccaff;
   background-image: none;
   margin-bottom: 130px;
   position: relative;
@@ -19,7 +21,7 @@
   z-index: 1;
   font-size: 80px;
   font-weight: bolder;
-  color: red;
+  color: white;
   position: absolute;
   top: -25px;
 }
@@ -51,6 +53,10 @@ width: 66%!important;
 
 h5 {
   margin-top: -20px;
+  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff;
+  font-family: "Sacramento", cursive;
+  font-size: 40px;
 }
 
  .carousel-caption {
