@@ -3,7 +3,12 @@
 module.exports = {
   mode: "production", // "production" | "development" | "none"
   // Chosen mode tells webpack to use its built-in optimizations accordingly.
-  entry: "./app/entry", // string | object | array
+  entry: {
+    app: './application.js',
+    // about: './about.js',
+    // contact: './contact.js'
+  }
+  // "./app/entry", // string | object | array
   // defaults to ./src
   // Here the application starts executing
   // and webpack starts bundling

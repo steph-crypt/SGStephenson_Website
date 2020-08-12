@@ -109,9 +109,11 @@ a {
 #about-container h2 {
   font-family: $header-font;
   color: $black;
-  font-size: $header-size;
+  // font-size: $header-size;
   margin-top: 40px;
   text-shadow: 2px 1px 2px #cc70db;
+  font-size: 57px;
+  margin-top: 60px;
 }
 
 .about {
@@ -127,6 +129,7 @@ a {
 
 .about p {
   overflow: scroll;
+  text-align: center;
   color: $black;
   background: none;
   border: none;
@@ -146,11 +149,14 @@ section {
     margin: 20px 20px;
     border-radius: 15px;
     margin: 20px 130px;
+    text-align: center;
 }
 
 #technical-skills p {
   text-align: center;
-  padding-top: 90px;
+  margin-top: 50px;
+  // padding-top: 90px;
+  border: 1px solid black;
 }
 
 //------projects header------//
@@ -178,11 +184,25 @@ section {
 
 .black-bar-horizontal {
   position: relative;
+  top: 100px;
 }
 
 .black-bar-horizontal:before {
   @extend %black-bar-base;
-  top: -65px;
+  top: -200px;
+  height: 67px;
+  @include transform(skewY(30.0deg));
+  transform: skewY(180.0deg);
+}
+
+.black-bar-horizontal-2 {
+  position: relative;
+  top: 100px;
+}
+
+.black-bar-horizontal-2:before {
+  @extend %black-bar-base;
+  top: -260px;
   height: 67px;
   @include transform(skewY(30.0deg));
   transform: skewY(180.0deg);
@@ -202,6 +222,7 @@ section {
 
 .projects-container {
   border-top: 2px solid $color-beta;
+  height: 187vh;
 }
 
 #projects {
@@ -213,14 +234,14 @@ section {
   font-family: $header-font;
   font-size: 57px;
   color: $white;
-  margin-top: 140px;
-  position: absolute;
-  z-index: 1;
-  bottom: 99%;
-  left: 50%;
-  margin-left: -154.5px;
+  // margin-top: 140px;
+  // position: absolute;
+  // z-index: 1;
+  // bottom: 85%;
+  // left: 50%;
+  // margin-left: -154.5px;
   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-}
+ }
 
 //------contact--------//
 
@@ -230,10 +251,11 @@ footer {
 }
 
 #contact h2 {
-  font-family: $text-font;
-  font-size: 40px;
-  color: $white;
+  font-size: 54px;
   padding: 30px;
+  font-family: "Sacramento", cursive;
+  color: $white;
+  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
 }
 
 #contact p {
