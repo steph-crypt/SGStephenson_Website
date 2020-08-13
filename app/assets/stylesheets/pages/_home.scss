@@ -115,22 +115,34 @@ a {
 //-------about------//
 
 section {
-  background-color: $white;
+  background-color: $black;
   position: absolute;
+
 }
+// #about-container {
+//   height: 75vh;
+// }
+
 
 #about-height-container {
   max-height: 100vh;
 }
 
+.wrapper {
+  border: 2px solid #60cd72;
+  margin: 80px;
+  border-radius: 20px;
+  background: #181c23;
+}
+
 #about-container h2 {
   font-family: $header-font;
-  color: $black;
   // font-size: $header-size;
   text-shadow: 2px 1px 2px #cc70db;
   font-size: 57px;
   margin-top: 50px;
-
+  color: $white;
+  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
 }
 
 .about {
@@ -147,7 +159,7 @@ section {
 #about-height-container p {
   overflow: scroll;
   text-align: center;
-  color: $black;
+  color: $white;
   background: none;
   border: none;
   max-height: 100vh;
@@ -158,7 +170,8 @@ section {
   margin-top: 50px;
   // padding-top: 90px;
   border: 1px solid black;
-  color: black;
+  color: $white;
+  margin-bottom: 52px;
 }
 
 //------projects header------//
@@ -188,13 +201,14 @@ section {
 
 .black-bar-horizontal {
   position: relative;
-  top: 100px;
+  top: 145px;
 }
 
 .black-bar-horizontal:before {
   @extend %black-bar-base;
   top: -200px;
-  height: 98px;
+  height: 30px;
+  border-bottom: 2px solid #aa46b8;
   @include transform(skewY(30.0deg));
   transform: skewY(180.0deg);
 }
@@ -207,7 +221,7 @@ section {
 .black-bar-horizontal-2:before {
   @extend %black-bar-base;
   top: -260px;
-  height: 67px;
+  height: 30px;
   @include transform(skewY(30.0deg));
   transform: skewY(180.0deg);
 }
@@ -228,10 +242,8 @@ section {
 
 .projects-container {
   border-top: 2px solid $color-beta;
-  border-bottom: 2px solid $color-beta;
-  height: 170vh;
+  height: 155vh;
   background: $black;
-
 }
 
 #projects {
@@ -264,12 +276,14 @@ footer {
 }
 
 #contact h2 {
-  font-size: 54px;
+  font-size: 57px;
   padding: 30px;
   font-family: "Sacramento", cursive;
   color: $white;
   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  margin-top: 0px;
 }
+
 
 #contact p {
   @extend %justify-flex-center;
