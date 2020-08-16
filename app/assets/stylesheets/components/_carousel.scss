@@ -110,10 +110,12 @@ h5 {
   @extend %control-after;
   content: '>';
   right: 40px;
+  top: -78px;
 }
 
 .projects-container .carousel-control-prev-icon:after {
   @extend %control-after;
   content: '<';
   left: 40px;
+  top: -78px;
 }
