@@ -6,10 +6,10 @@
 %control-direction {
   height: 100px;
   width: 100px;
-  outline: black;
+  outline: $black;
   background-size: 100%, 100%;
   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-    color: #fccaff;
+  color: #fccaff;
   background-image: none;
   margin-bottom: 130px;
   position: relative;
@@ -19,7 +19,7 @@
   z-index: 1;
   font-size: 80px;
   font-weight: bolder;
-  color: white;
+  color: $white;
   position: absolute;
   top: -25px;
 }
@@ -53,7 +53,7 @@ h5 {
   margin-top: -20px;
   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff, 0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
   color: #fccaff;
-  font-family: "Sacramento", cursive;
+  font-family: $cursive-font;
   font-size: 40px;
 }
 
@@ -68,13 +68,13 @@ h5 {
       bottom: -100px;
       padding-bottom: 40px;
       color: white;
-      }
+    }
   }
 }
 
 .caption-text {
-  min-height:150px;
-  max-height:150px;
+  min-height: 150px;
+  max-height: 150px;
 }
 
 #indicator-override {
@@ -89,7 +89,7 @@ h5 {
     width: 14px;
     height: 14px;
     border-radius: 100%;
-    background-color: black;
+    background-color: $black;
     size: 20px;
   }
 }

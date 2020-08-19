@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
+@mixin pink-text-shadow {
+  $text-shadow: 0 0 5px $shadow-pink:#f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+  0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff;
+}
+
+@mixin transform($angle) {
+  -webkit-transform: $angle;
+  -moz-transform: $angle;
+  -ms-transform: $angle;
+  -o-transform: $angle;
+  -webkit-backface-visibility: hidden;
+}
 header {
   position: relative;
 }
@@ -21,7 +34,7 @@ li a {
   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
   color: #fccaff;
-  font-family: "Sacramento", cursive;
+  font-family: $cursive-font;
   text-align: center;
 }
 
