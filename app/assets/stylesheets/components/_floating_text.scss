@@ -4,8 +4,8 @@ __________________________*/
 .text-animation {
   font-weight: 100;
   font-size: 60px;
-  color: #60cd72;
-  font-family: "Sacramento", cursive;
+  color: $color-beta;
+  font-family: $cursive-font;
   display: flex;
   transform: translate3d(0px, 0px, 0px);
   transform-style: preserve-3d;
