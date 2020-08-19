@@ -1,0 +1,81 @@
+// properties
+$angle: skewY(30.0deg);
+
+// mixins
+@mixin transform($angle) {
+  -webkit-transform: $angle;
+  -moz-transform: $angle;
+  -ms-transform: $angle;
+  -o-transform: $angle;
+  -webkit-backface-visibility: hidden;
+}
+
+// extends
+%justify-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+
+%black-bar-base {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #000000b8;
+}
+
+.black-bar-left {
+  position: relative;
+}
+
+.black-bar-left:before {
+  @extend %black-bar-base;
+  top: -150px;
+  height: 100px;
+  border-top: 2px solid #61cd72;
+  border-bottom: 2px solid #61cd72;
+  @include transform(skewY(30.0deg));
+  transform: skewY(25.0deg);
+}
+
+.black-bar-horizontal {
+  position: relative;
+  top: 145px;
+}
+
+.black-bar-horizontal:before {
+  @extend %black-bar-base;
+  top: -200px;
+  height: 30px;
+  border-bottom: 2px solid #aa46b8;
+  @include transform(skewY(30.0deg));
+  transform: skewY(180.0deg);
+}
+
+.black-bar-horizontal-2 {
+  position: relative;
+  top: 100px;
+}
+
+.black-bar-horizontal-2:before {
+  @extend %black-bar-base;
+  top: -260px;
+  height: 30px;
+  @include transform(skewY(30.0deg));
+  transform: skewY(180.0deg);
+}
+
+.black-bar-right {
+  position: relative;
+}
+
+.black-bar-right:before {
+  @extend %black-bar-base;
+  top: -149px;
+  height: 100px;
+  border-top: 2px solid #61cd72;
+  border-bottom: 2px solid #61cd72;
+  @include transform(skewY(30.0deg));
+  transform: skewY(155.0deg);
+}
