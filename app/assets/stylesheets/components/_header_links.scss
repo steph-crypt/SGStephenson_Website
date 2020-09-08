@@ -31,15 +31,14 @@ li a {
   padding-right: 120px;
   font-size: calc(15px + 3vh);
   line-height: calc(20px + 20vh);
-  text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-   0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  text-shadow: 0 0 5px #6e2b78, 0 0 15px #421337, 0 0 25px #060107, 0 0 20px #6b2a5e, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
   color: #fccaff;
   font-family: $cursive-font;
   text-align: center;
 }
 
 li a:hover {
-  color: black;
+  color: #0ce6d2;
   text-decoration: none;
 }
 
