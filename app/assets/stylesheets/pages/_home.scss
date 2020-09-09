@@ -114,6 +114,7 @@ section {
   margin: 80px;
   border-radius: 20px;
   background: #181c23;
+
 }
 
 #about-container h2 {
@@ -138,12 +139,19 @@ section {
   max-height: 100vh;
 }
 
-#technical-skills p {
-  text-align: center;
-  margin-top: 50px;
-  border: 1px solid $black;
-  color: $white;
-  margin-bottom: 52px;
+#technical-skills {
+
+  em {
+    font-family: "Montserrat Subrayada", sans-serif;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid $black;
+    color: $white;
+    margin-bottom: 52px;
+  }
 }
 
 //------contact--------//
