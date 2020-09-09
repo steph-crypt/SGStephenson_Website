@@ -43,6 +43,18 @@
           .section-B .projects-container {
             height: 125vh;
           }
+
+           .projects-container .carousel-control-next-icon:after {
+            content: '>';
+            right: -.9em;
+            top: .8em;;
+          }
+
+          .projects-container .carousel-control-prev-icon:after {
+            content: '<';
+            left: -.9em;
+            top: .8em;
+          }
         }
 
         @media (min-width: 359px) and (max-width: 550px) {
@@ -150,6 +162,19 @@
            .section-B .projects-container {
             height: 125vh;
           }
+
+
+          .projects-container .carousel-control-next-icon:after {
+          content: '>';
+          right: -1em;
+          top: 1em;
+          }
+
+          .projects-container .carousel-control-prev-icon:after {
+          content: '<';
+          left: -1em;
+          top: 1em;
+          }
         }
 
         @media (min-width: 730px) and (max-width: 767px) {
@@ -181,13 +206,13 @@
 
           .projects-container .carousel-control-next-icon:after {
           content: '>';
-          right: -.5em;
+          right: -1em;
           top: 1em;
           }
 
           .projects-container .carousel-control-prev-icon:after {
           content: '<';
-          left: -.5em;
+          left: -1em;
           top: 1em;
           }
         }
@@ -222,12 +247,12 @@
         }
 
 
-      @media (min-width: 768px) and (max-width: 973px) {
+      @media (min-width: 768px) and (max-width: 993px) {
         li a {
             display: none;
           }
 
-    /*    .projects-container .carousel-control-next-icon:after {
+        .projects-container .carousel-control-next-icon:after {
           content: '>';
           right: -.5em;
           top: -1em;
@@ -237,13 +262,12 @@
           content: '<';
           left: -.5em;
           top: -1em;
-        }*/
+        }
       }
 
-      @media (min-width: 769px) and (max-width: 993px) {
         header .text-animation {
           position: absolute;
-          top: -5px;
+          top: 1em;
         }
 
         #about-container #technical-skills p {
@@ -251,9 +275,9 @@
           border: 1px solid black;
           margin-bottom: 20px;
         }
-      }
 
-      @media (min-width: 993px) and (max-width: 1159px) {
+
+      @media (min-width: 994px) and (max-width: 1159px) {
 
         li a {
           font-size: calc(11px + 3vh);
@@ -262,7 +286,7 @@
         .text-animation {
           font-size: 65px;
           position: absolute;
-          top: 35px;
+          top: 1.5em;
         }
 
         .section-B .projects-container {
@@ -275,14 +299,14 @@
 
         .projects-container .carousel-control-next-icon:after {
           content: '>';
-          right: 10px;
-          top: -78px;
+          right: 0em;
+          top: -1em;
         }
 
         .projects-container .carousel-control-prev-icon:after {
           content: '<';
-          left: 10px;
-          top: -78px;
+          left: 0em;
+          top: -1em;
         }
 
         #about-container {
@@ -304,7 +328,7 @@
 
         header .text-animation {
           position: absolute;
-          top: 65px;
+          top: 1em;
         }
       }
 
@@ -336,8 +360,6 @@
         .section-B .projects-container {
           height: 67vh;
         }
-
-        padding:
       }
 
      </style>
