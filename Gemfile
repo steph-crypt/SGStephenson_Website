@@ -31,7 +31,10 @@ gem 'font-awesome-rails'
 # gem 'websocket-extensions', '~> 0.1.5'
 gem 'activesupport', '~> 5.2', '>= 5.2.4.3'
 gem 'railties', '~> 5.2', '>= 5.2.4.3'
-gem "bootstrap", ">= 4.3.1"
+gem 'simple_form'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'jquery-rails'
+gem 'sprockets-rails', '~> 3.0', '>= 3.0.4'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
