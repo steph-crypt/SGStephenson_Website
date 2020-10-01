@@ -10,15 +10,16 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery3
+//= require popper
+//= require bootstrap
 //= require rails-ujs
 //= require_tree .
 
 require("bootstrap/dist/js/bootstrap")
-// import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 import 'bootstrap'
 import './src/application.scss'
-
 
 import { parallax } from '../plugins/parallax';
 
