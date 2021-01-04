@@ -17,4 +17,5 @@
 //= require rails-ujs
 //= require_tree .
 
-import './src/application.scss';
+
+// import './src/application.scss';
