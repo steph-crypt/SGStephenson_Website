@@ -19,18 +19,7 @@
 
         <%= render 'layouts/footer' %>
 
-      <script src="../../../application.js"></script>
-
-          <script>
-            $(function() {
-            $('a[href*=#]').on('click', function(e) {
-              e.preventDefault();
-              $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 3000, 'linear');
-            });
-          });
-          </script>
-
-          <script>
+        <script>
           class TextScramble {
             constructor(el) {
               this.el = el
@@ -85,50 +74,44 @@
             }
           }
 
-          const phrases = [
-            'Frontend Developer.',
-            'Baby Addict.',
-            'Lady.'
-          ]
+        const phrases = [
+          'Frontend Developer.',
+          'Baby Addict.',
+          'Lady.'
+        ]
 
-          const el = document.querySelector('.text-animation')
-          const fx = new TextScramble(el)
+        const el = document.querySelector('.text-animation')
+        const fx = new TextScramble(el)
 
-          let counter = 0
-          const next = () => {
-            fx.setText(phrases[counter]).then(() => {
-              setTimeout(next, 1700)
-            })
-            counter = (counter + 1) % phrases.length
-          }
+        let counter = 0
+        const next = () => {
+          fx.setText(phrases[counter]).then(() => {
+            setTimeout(next, 1700)
+          })
+          counter = (counter + 1) % phrases.length
+        }
+        next()
+      </script>
 
-          next()
-        </script>
+      <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene, {
+        });
+      </script>
 
-        <script src="./parallax.js"></script>
-          <script>
-          var scene = document.getElementById('scene');
-          var parallax = new Parallax(scene, {
-          });
-          </script>
-
-        <script src="simpleParallax.js"></script>
-
-        <script>
-          var image = document.getElementsByClassName('banner-img');
+      <script>
+        var image = document.getElementsByClassName('banner-img');
         new simpleParallax(image, {
         scale: 3.0
         });
-        </script>
+      </script>
 
-        <script>
-
-          var image = document.getElementsByClassName('banner-img-2');
+      <script>
+        var image = document.getElementsByClassName('banner-img-2');
         new simpleParallax(image, {
-          scale: 3.0
+        scale: 3.0
         });
-
-        </script>
+      </script>
     </section>
 </div>
 
